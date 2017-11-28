@@ -265,6 +265,7 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
         Ext.preg("gx_wmssource", gxp.plugins.WMSSource);
         Ext.preg("gx_olsource", gxp.plugins.OLSource);
         Ext.preg("gx_googlesource", gxp.plugins.GoogleSource);
+        Ext.preg("gx_baidusource", gxp.plugins.BaiduSource);
         Ext.preg("gx_gnsource", gxp.plugins.GeoNodeSource);
 
         // global request proxy and error handling

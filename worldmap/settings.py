@@ -136,7 +136,7 @@ CUSTOM_ORG_AUTH_TEXT = 'Are you affiliated with Harvard University?'
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = os.getenv('TIME_ZONE', "America/Chicago")
+TIME_ZONE = os.getenv('TIME_ZONE', "Asia/Shanghai")
 
 SITE_ID = int(os.getenv('SITE_ID', '1'))
 
@@ -145,7 +145,7 @@ USE_L10N = str2bool(os.getenv('USE_I18N', 'True'))
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = os.getenv('LANGUAGE_CODE', "en-us")
+LANGUAGE_CODE = os.getenv('LANGUAGE_CODE', "zh-cn")
 # Underscore at the beginning added to represent a private variable.
 # should not be used in the application.
 _DEFAULT_LANGUAGES = (
@@ -574,7 +574,7 @@ _DEFAULT_ACTSTREAM_SETTINGS = {
 ACTSTREAM_SETTINGS = os.getenv('ACTSTREAM_SETTINGS',_DEFAULT_ACTSTREAM_SETTINGS)
 
 # Email settings
-EMAIL_ENABLE = False
+EMAIL_ENABLE = True
 
 if EMAIL_ENABLE:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -631,6 +631,7 @@ NOSE_ARGS = os.getenv('NOSE_ARGS',_DEFAULT_NOSE_ARGS)
 GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY',"gme-harvarduniversity1")
 # this is for the basemaps
 GOOGLE_MAPS_API_KEY = os.getenv('GOOGLE_MAPS_API_KEY', None)
+BAIDU_MAPS_API_KEY = os.getenv('BAIDU_MAPS_API_KEY', None)
 
 # GOOGLE_SECRET_KEY = None
 
@@ -939,7 +940,7 @@ _DEFAULT_MAP_BASELAYERS = [
         },
         "group": "background",
         "name": "TERRAIN",
-        "visibility": True,
+        "visibility": False,
         "fixed": True,
     }, {
         "source": {
@@ -957,7 +958,40 @@ _DEFAULT_MAP_BASELAYERS = [
         "name": "ROADMAP",
         "visibility": False,
         "fixed": True,
-        "group": "background"
+    },
+    {
+        "source": {
+            "ptype": "gxp_baidusource"
+        },
+        "group": "background",
+        "name": "TIANDITUROAD",
+        "visibility": False,
+        "fixed": True,
+    },
+    {
+        "source": {
+            "ptype": "gxp_baidusource",
+        },
+        "group": "background",
+        "name": "TIANDITUIMAGE",
+        "visibility": True,
+        "fixed": True,
+    }, {
+        "source": {
+            "ptype": "gxp_baidusource"
+        },
+        "group": "background",
+        "name": "TIANDITUTERRAIN",
+        "visibility": False,
+        "fixed": True,
+    }, {
+        "source": {
+            "ptype": "gxp_baidusource"
+        },
+        "group": "background",
+        "name": "TIANDITUANNOTATION",
+        "visibility": True,
+        "fixed": True,
     }
 ]
 

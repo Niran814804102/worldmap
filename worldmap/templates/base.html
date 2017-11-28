@@ -35,55 +35,73 @@
       </style>
     <![endif]-->
     <link rel="search" type="application/opensearchdescription+xml" href="/catalogue/opensearch" title="GeoNode Search"/>
-  </head>
-
-  <body class="{% block body_class %}{% endblock %}">
-    <!-- Navbar -->
-    {% block header %}
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <i class="fa fa-navicon fa-lg"></i>
-        </button>
-        <a class="navbar-brand" href="{% url "home" %}">GeoNode</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-            <li> <a href="{% url "new_map" %}">{% trans "Create Map" %}</a></li>
-            <li><a href="{% url "maps_browse" %}">{% trans "View Map" %}</a></li>
-            {% if user.is_authenticated %}
-            <li><a href="#" class="dropdown-toggle avatar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% avatar user 42 %} {{ user.username }}<i class="fa fa-angle-down fa-lg"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="{{ user.get_absolute_url }}">{% trans "Profile" %}</a></li>
-                <li><a href="{% url "recent-activity" %}">{% trans "Recent Activity" %}</a></li>
-                <li><a href="{% url "messages_inbox" %}">{% trans "Inbox" %}</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="{% url "admin:index" %}">Admin</a></li>
-                <li><a href="{{ GEOSERVER_BASE_URL }}">GeoServer</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="{% url "help" %}">{% trans "Help" %}</li>
-                <li role="separator" class="divider"></li>
-                <li><a href="/account/logout/">Logout</a></li>
-                </ul>
-              </li>
-          {% else %}
-          <li><a href="#" data-toggle="modal" data-target="#SigninModal" role="button" >{% trans "Sign in" %} </a></li>
-              {% endif %}
-            </ul>
-          </div> <!--/.nav-collapse -->
-        </div>
-      </nav>
-      {% endblock header %}
-      <!-- End of Navbar -->
-
-    <div class="alert alert-danger alert-dismissible" role="alert" id="ieflag" style="display:none">
+    <link rel="icon" href="{{ STATIC_URL }}img/icon.ico" type="image/x-icon"/>
+    <link href="{{ STATIC_URL }}plugin/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}plugin/jquery-easyui-1.5.2/themes/icon.css" rel="stylesheet" >
+    <link href="{{ STATIC_URL }}css/index.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/scroll.css" rel="stylesheet"><script type="text/javascript" src="{{ STATIC_URL }}plugin/jquery-easyui-1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}plugin/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}plugin/jquery-easyui-1.5.2/jquery.easyui.min.js"></script>
+</head>
+<body>
+<body class="{% block body_class %}{% endblock %}">
+  <!-- Navbar -->
+  {% block header %}
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div id="nav" class="container opacity50">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse topnavi" role="navigation" id="navbar">
+      <ul class="nav navbar-nav navbar-left" id="nav">
+        <li><a href="{% url "home" %}">World Map</a> </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{% url "new_map" %}">{% trans "Create Map" %}</a></li>
+        <li><a href="{% url "maps_browse" %}">{% trans "View Map" %}</a></li>
+        
+        {% if user.is_authenticated %}
+        <li><a href="#" class="dropdown-toggle avatar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% avatar user 42 %} {{ user.username }}<i class="fa fa-angle-down fa-lg"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ user.get_absolute_url }}">{% trans "Profile" %}</a></li>
+            <li><a href="{% url "recent-activity" %}">{% trans "Recent Activity" %}</a></li>
+            <li><a href="{% url "messages_inbox" %}">{% trans "Inbox" %}</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{% url "admin:index" %}">Admin</a></li>
+            <li><a href="{{ GEOSERVER_BASE_URL }}">GeoServer</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{% url "help" %}">{% trans "Help" %}</li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/account/logout/"></a></li>
+          </ul>
+        </li>
+        
+        {% else %}
+        <li><a href="#" data-toggle="modal" data-target="#SigninModal" role="button" >{% trans "Sign in" %} </a></li>
+        
+        {% endif %}
+      </ul>   
+    </div>
+  </nav>
+  <div id="headInterval"></div>
+  {% endblock header %}
+  <!-- End of Navbar -->
+<!--   <div class="alert alert-danger alert-dismissible" role="alert" id="ieflag" style="display:none">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <h1>You are using an outdated browser that is not supported by GeoNode.</h1>
       <p>Please use a <strong>modern browser</strong> like Mozilla Firefox, Google Chrome or Safari.</p>
-    </div>
+  </div> -->
+  <div class="headBackgroud">
+    <img class="headTitle" src="{{ STATIC_URL }}img/title.png"/>
+  </div>
+  
 
-  <div id="wrap">
+<div id="wrap">
     {% block middle %}
     <div class="container">
       {% include "_status_message.html" %}
@@ -98,37 +116,46 @@
         {% block sidebar %}{% endblock %}
         </div>
       </div>
+      
       {% endblock %}
     </div>
     {% endblock middle %}
   </div>
 
   {% block footer %}
+  <hr/>
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <a href="{{site}}{{ STATIC_URL }}docs/WorldMap_Help_{{LANGUAGE_CODE}}.pdf">{% trans "Need Help?" %}</a>&nbsp;&nbsp;
-          <a href="mailto:worldmap@harvard.edu">{%  trans "Contact Us" %}</a>&nbsp;&nbsp;
-          <a href="https://github.com/cga-harvard/worldmap">{% trans "Source Code" %}</a>&nbsp;&nbsp;
-          <a href="http://www.harvard.edu/copyright-issue">{% trans "Report Copyright Infringement" %}</a>&nbsp;&nbsp; <br>
-        {% trans "Copyright 2017 &copy; The President and Fellows of Harvard College" %}
+    <div class="container-fluid footerDiv">
+      <img src="{{ STATIC_URL }}img/title_small.png"/>
+      <hr/>
+      <div class="row footerContent">
+        <div class="col-md-3 col-sm-3">
+          <h4 class="footerTitle">{%  trans "Contact Us" %}</h4>
+          <span class="footerFont">地址：浙江大学西溪校区</span>
         </div>
-        <div class="col-md-4">
-        <label class="hidden">{% trans "Language" %}</label>
-        {% if csrf_token != "NOTPROVIDED" %}
-        {% get_current_language as LANGUAGE %}
-        <form class="form-inline" action="/i18n/setlang/" method="post">
-        {% csrf_token %}
-          <select class="col-md-6" name="language" onchange="javascript:form.submit()">
-            {% for lang in LANGUAGES %}
-            <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
-              {{ lang.1 }}
-            </option>
-            {% endfor %}
-          </select>
-        </form>
-        {% endif %}
+        <div class="col-md-3 col-sm-3">
+          <h4 class="footerTitle">友情链接</h4>
+          <span>浙江大学</span>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <h4 class="footerTitle">版权声明</h4>
+          <span>浙江大学</span>
+        </div>
+        <div class="col-md-3 col-sm-3">
+            <label class="hidden">{% trans "Language" %}</label>
+            {% if csrf_token != "NOTPROVIDED" %}
+            {% get_current_language as LANGUAGE %}
+            <form class="form-inline" action="/i18n/setlang/" method="post">
+            {% csrf_token %}
+              <select class="col-md-6" name="language" onchange="javascript:form.submit()">
+                {% for lang in LANGUAGES %}
+                <option value="{{ lsang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
+                  {{ lang.1 }}
+                </option>
+                {% endfor %}
+              </select>
+            </form>
+            {% endif %}
         </div>
       </div>
     </div>
@@ -139,10 +166,11 @@
     <!-- Modal must stay outside the navbar -->
     {% if not user.is_authenticated %}
     <div class="modal fade" id="SigninModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
+      <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             <h4 class="modal-title" id="myModalLabel">{% trans "Sign in" %}</h4>
           </div>
           <form class="form-signin" role="form" action="{% url "account_login" %}?next={{ request.path }}" method="post">

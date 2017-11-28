@@ -7,6 +7,7 @@
 {% block head %}
 
 <script src="http://maps.google.com/maps/api/js?v=3&key={{GOOGLE_MAPS_API_KEY}}"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak={{BAIDU_MAPS_API_KEY}}"></script>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
@@ -142,7 +143,7 @@
                 	actionTarget:   {target: "paneltbar", index: 20}
                 }{% endif %}
                 ],
-                proxy: "{{ PROXY_URL }}",
+            proxy: "{{ PROXY_URL }}",
 
             /* The URL to a REST map configuration service.  This service
              * provides listing and, with an authenticated user, saving of
@@ -251,31 +252,10 @@
                 </div>
             </div>
         </div>
-
         <div id="submitEndpointDiv">
             <div id="tabContainer" style="padding:20px;">
-
                 <div style="position:relative;float:left;">
-
-
                     <h3>{%trans "Submit a Map Service URL"  %}</h3>
-
-                    <p style="font-size: 14px">
-                      {% trans "<a target='_blank' href='/maps/add_endpoint'>Submit a Map Service URL</a>" %}
-                    </p>
-
-                </div>
-            </div>
-        </div>
-
-        <div id="submitEndpointDiv">
-            <div id="tabContainer" style="padding:20px;">
-
-                <div style="position:relative;float:left;">
-
-
-                    <h3>{%trans "Submit a Map Service URL"  %}</h3>
-
                     <p style="font-size: 14px">
                       {% trans "<a target='_blank' href='/maps/add_endpoint'>Submit a Map Service URL</a>" %}
                     </p>

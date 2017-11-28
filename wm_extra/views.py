@@ -27,7 +27,7 @@ from geonode.maps.views import snapshot_config
 from geonode.utils import DEFAULT_TITLE
 from geonode.utils import DEFAULT_ABSTRACT
 
-from .models import LayerStats
+from .models import LayerStats, MapStats
 from .forms import EndpointForm
 
 
@@ -550,3 +550,20 @@ def official_site(request, site):
     """
     map_obj = get_object_or_404(Map,urlsuffix=site)
     return map_view_wm(request, str(map_obj.id))
+
+# TODO get the hotest and latest layer/map
+def get_latest_maps(request):
+    #latestmaps=MapStats.objects.order_by('last_modified')[0:5]
+    return HttpResponse("<h1>test</h1>")
+
+def get_hottest_maps(request):
+    hottestmaps=MapStats.objects.order_by('visits')[0:5]
+    return hottestmaps
+
+def get_latest_layers(request):
+    latestlayers=LayerStats.objects.order_by('last_modified')[0:5]
+    return latestlayers
+
+def get_hottest_layers(request):
+    hottestlayers=LayerStats.objects.order_by('visits')[0:5]
+    return hottestlayers
