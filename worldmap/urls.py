@@ -36,7 +36,7 @@ import autocomplete_light
 
 from wm_extra.views import (proxy, ajax_layer_update, ajax_layer_edit_check, upload_layer,
     create_pg_layer, ajax_increment_layer_stats, new_map_wm, map_view_wm,
-    add_layer_wm, add_endpoint, get_hottest_maps, get_latest_maps)
+    add_layer_wm, add_endpoint, get_categorys, get_most_maps)
 from tastypie.api import Api
 from wm_extra.api.resources import LayerResource, TagResource, TopicCategoryResource
 from wm_extra.accounts.views import SignupView
@@ -72,7 +72,9 @@ urlpatterns = patterns('',
                        url(r'^developer/$', TemplateView.as_view(template_name='developer.html'), name='developer'),
                        url(r'^about/$', TemplateView.as_view(template_name='about.html'), name='about'),
                        url(r'^upload_terms/$', TemplateView.as_view(template_name='upload_terms.html'), name='upload_terms'),
-
+                        # TODO add urls to get the category_list and hottest/latest maps
+                       url(r'^getCategory/', get_categorys, name='getCategory'),
+                       url(r'^getMostMaps/', get_most_maps, name='getMostMaps'),
                        # Layer views
                        (r'^layers/', include('geonode.layers.urls')),
 )
@@ -90,8 +92,6 @@ if settings.LAYER_PREVIEW_LIBRARY == 'worldmap':
                             url(r'^maps/add_endpoint?$', add_endpoint, name='add_endpoint'),
 			    url(r'^snapshot/create/?$', snapshot_create, name='snapshot_create'),
 			    url(r'^maps/(?P<mapid>[^/]+)/(?P<snapshot>[A-Za-z0-9_\-]+)/$', map_view_wm, name='map_view_wm'),
-                            url(r'^get_hottest_maps/$', get_hottest_maps, name='get_hottest_maps'),
-                            url(r'^get_latest_maps/$', get_latest_maps, name='get_latest_maps'),
                             # TODO develop the create layer app
                             # layers
                             url(r'^data/(?P<layername>[^/]*)$', RedirectView.as_view(pattern_name='layer_detail', permanent=False)),
@@ -135,8 +135,8 @@ urlpatterns += patterns('',
                        (r'^security/', include('geonode.security.urls')),
 
                        # Accounts
-                       url(r'^account/ajax_login$', 'geonode.views.ajax_login', name='account_ajax_login'),
-                       url(r'^account/ajax_lookup$', 'geonode.views.ajax_lookup', name='account_ajax_lookup'),
+                       url(r'^accounts/ajax_login$', 'geonode.views.ajax_login', name='account_ajax_login'),
+                       url(r'^accounts/ajax_lookup$', 'geonode.views.ajax_lookup', name='account_ajax_lookup'),
 
                        # Meta
                        url(r'^lang\.js$', TemplateView.as_view(template_name='lang.js', content_type='text/javascript'),
@@ -230,9 +230,4 @@ urlpatterns += patterns('',
                         (r'^featured/(?P<site>[A-Za-z0-9_\-]+)/$', 'geonode.maps.views.featured_map'),
                         (r'^featured/(?P<site>[A-Za-z0-9_\-]+)/info$', 'geonode.maps.views.featured_map_info'),
                         (r'^(?P<site>[A-Za-z0-9_\-]+)/$', 'wm_extra.views.official_site'),
-                        )
-# TODO add urls to get hottest and latest maps
-urlpatterns += patterns('',
-                        url(r'^getHottestMaps/$', get_hottest_maps, name='getHottestMaps'),
-                        url(r'^getLatestMaps/$', get_latest_maps, name='getLatestMaps'),
                         )

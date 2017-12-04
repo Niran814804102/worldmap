@@ -965,7 +965,7 @@ _DEFAULT_MAP_BASELAYERS = [
         },
         "group": "background",
         "name": "TIANDITUROAD",
-        "visibility": False,
+        "visibility": True,
         "fixed": True,
     },
     {
@@ -974,7 +974,7 @@ _DEFAULT_MAP_BASELAYERS = [
         },
         "group": "background",
         "name": "TIANDITUIMAGE",
-        "visibility": True,
+        "visibility": False,
         "fixed": True,
     }, {
         "source": {

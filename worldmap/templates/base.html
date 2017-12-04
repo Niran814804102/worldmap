@@ -11,6 +11,7 @@
       <link href="{{ STATIC_URL }}lib/css/jquery.dataTables.css?v={{ VERSION }}" rel="stylesheet" />
       <link href="{{ STATIC_URL }}lib/css/select2.css?v={{ VERSION }}" rel="stylesheet"/>
       <link href="{{ STATIC_URL }}lib/css/bootstrap.min.css?v={{ VERSION }}" rel="stylesheet"/>
+      <link href="{{ STATIC_URL }}lib/css/bootstrap-select.min.css?v={{ VERSION }}" rel="stylesheet"/>
       <link href="{{ STATIC_URL }}lib/css/jquery-ui.css?v={{ VERSION }}" rel="stylesheet"/>
       <link href="{{ STATIC_URL }}lib/css/bootstrap-datetimepicker.css?v={{ VERSION }}" rel="stylesheet"/>
       <link href="{{ STATIC_URL }}lib/css/bootstrap-tokenfield.css?v={{ VERSION }}" rel="stylesheet"/>
@@ -36,12 +37,9 @@
     <![endif]-->
     <link rel="search" type="application/opensearchdescription+xml" href="/catalogue/opensearch" title="GeoNode Search"/>
     <link rel="icon" href="{{ STATIC_URL }}img/icon.ico" type="image/x-icon"/>
-    <link href="{{ STATIC_URL }}plugin/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}plugin/jquery-easyui-1.5.2/themes/icon.css" rel="stylesheet" >
     <link href="{{ STATIC_URL }}css/index.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/scroll.css" rel="stylesheet"><script type="text/javascript" src="{{ STATIC_URL }}plugin/jquery-easyui-1.5.2/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}plugin/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}plugin/jquery-easyui-1.5.2/jquery.easyui.min.js"></script>
 </head>
 <body>
 <body class="{% block body_class %}{% endblock %}">
@@ -75,9 +73,9 @@
             <li><a href="{% url "admin:index" %}">Admin</a></li>
             <li><a href="{{ GEOSERVER_BASE_URL }}">GeoServer</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="{% url "help" %}">{% trans "Help" %}</li>
+            <li><a href="{% url "help" %}">{% trans "Help" %}</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/account/logout/"></a></li>
+            <li><a href="/account/logout/">Logout</a></li>
           </ul>
         </li>
         
@@ -210,6 +208,7 @@
     <script src="{{ STATIC_URL }}lib/js/jquery-ui.custom.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/jquery.raty.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/bootstrap.min.js?v={{ VERSION }}"></script>
+    <script src="{{ STATIC_URL }}lib/js/bootstrap-select.min.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/moment-with-locales.min.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/bootstrap-datetimepicker.min.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/json2.js?v={{ VERSION }}"></script>
