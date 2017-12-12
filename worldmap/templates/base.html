@@ -70,12 +70,12 @@
             <li><a href="{% url "recent-activity" %}">{% trans "Recent Activity" %}</a></li>
             <li><a href="{% url "messages_inbox" %}">{% trans "Inbox" %}</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="{% url "admin:index" %}">Admin</a></li>
+            <li><a href="{% url "admin:index" %}">{% trans "Admin" %}</a></li>
             <li><a href="{{ GEOSERVER_BASE_URL }}">GeoServer</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="{% url "help" %}">{% trans "Help" %}</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/account/logout/">Logout</a></li>
+            <li><a href="/account/logout/">{% trans "Log out" %}</a></li>
           </ul>
         </li>
         
@@ -147,7 +147,7 @@
             {% csrf_token %}
               <select class="col-md-6" name="language" onchange="javascript:form.submit()">
                 {% for lang in LANGUAGES %}
-                <option value="{{ lsang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
+                <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
                   {{ lang.1 }}
                 </option>
                 {% endfor %}
