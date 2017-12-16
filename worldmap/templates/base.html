@@ -10,17 +10,18 @@
       {% if DEBUG_STATIC %}
       <link href="{{ STATIC_URL }}lib/css/jquery.dataTables.css?v={{ VERSION }}" rel="stylesheet" />
       <link href="{{ STATIC_URL }}lib/css/select2.css?v={{ VERSION }}" rel="stylesheet"/>
-      <link href="{{ STATIC_URL }}lib/css/bootstrap.min.css?v={{ VERSION }}" rel="stylesheet"/>
+      <link href="{{ STATIC_URL }}plugin/bootstrap-3.3.7/css/bootstrap.min.css?v={{ VERSION }}" rel="stylesheet"/>
       <link href="{{ STATIC_URL }}lib/css/bootstrap-select.min.css?v={{ VERSION }}" rel="stylesheet"/>
       <link href="{{ STATIC_URL }}lib/css/jquery-ui.css?v={{ VERSION }}" rel="stylesheet"/>
-      <link href="{{ STATIC_URL }}lib/css/bootstrap-datetimepicker.css?v={{ VERSION }}" rel="stylesheet"/>
-      <link href="{{ STATIC_URL }}lib/css/bootstrap-tokenfield.css?v={{ VERSION }}" rel="stylesheet"/>
+      <link href="{{ STATIC_URL }}lib/css/bootstrap-datetimepicker.min.css?v={{ VERSION }}" rel="stylesheet"/>
+      <link href="{{ STATIC_URL }}lib/css/bootstrap-tokenfield.min.css?v={{ VERSION }}" rel="stylesheet"/>
       {% else %}
       <link href="{{ STATIC_URL }}lib/css/assets.min.css?v={{ VERSION }}" rel="stylesheet"/>
       {% endif %}
       <link href="{{ STATIC_URL }}geonode/css/ext-compatibility.css?v={{ VERSION }}" rel="stylesheet" />
       <link href="{{ STATIC_URL }}geonode/css/base.css?v={{ VERSION }}" rel="stylesheet" />
       <link href="{{ STATIC_URL }}css/site_base.css?v={{ VERSION }}" rel="stylesheet" />
+        <script src="{{ STATIC_URL }}plugin/jquery-3.2.1.min.js?v={{ VERSION }}"></script>
       <style type="text/css">[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}</style>
       {% block extra_head %}
       {% endblock %}
@@ -39,7 +40,7 @@
     <link rel="icon" href="{{ STATIC_URL }}img/icon.ico" type="image/x-icon"/>
     <link href="{{ STATIC_URL }}plugin/jquery-easyui-1.5.2/themes/icon.css" rel="stylesheet" >
     <link href="{{ STATIC_URL }}css/index.css" rel="stylesheet">
-    <link href="{{ STATIC_URL }}css/scroll.css" rel="stylesheet"><script type="text/javascript" src="{{ STATIC_URL }}plugin/jquery-easyui-1.5.2/jquery.min.js"></script>
+    <link href="{{ STATIC_URL }}css/scroll.css" rel="stylesheet">
 </head>
 <body>
 <body class="{% block body_class %}{% endblock %}">
@@ -57,7 +58,7 @@
     </div>
     <div class="collapse navbar-collapse topnavi" role="navigation" id="navbar">
       <ul class="nav navbar-nav navbar-left" id="nav">
-        <li><a href="{% url "home" %}">World Map</a> </li>
+        <li><a href="{% url "home" %}">{% trans "Academic Map Publishing Platform" %}</a> </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{% url "new_map" %}">{% trans "Create Map" %}</a></li>
@@ -140,6 +141,7 @@
           <span>浙江大学</span>
         </div>
         <div class="col-md-3 col-sm-3">
+            <h4 class="footerTitle">选择语言</h4>
             <label class="hidden">{% trans "Language" %}</label>
             {% if csrf_token != "NOTPROVIDED" %}
             {% get_current_language as LANGUAGE %}
@@ -174,7 +176,7 @@
           <form class="form-signin" role="form" action="{% url "account_login" %}?next={{ request.path }}" method="post">
             <div class="modal-body">
               <div class="alert alert-info">
-                  Don't have an account yet? <a href="{% url "account_signup" %}">{% trans "Register" %}</a>
+                  {% trans "Don't have an account yet?" %} <a href="{% url "account_signup" %}">{% trans "Register" %}</a>
               </div>
               {% csrf_token %}
               <div class="form-group">
@@ -200,14 +202,14 @@
     <!-- End of Modal -->
 
     {% if DEBUG_STATIC %}
-    <script src="{{ STATIC_URL }}lib/js/jquery.min.js?v={{ VERSION }}"></script>
+    <script src="{{ STATIC_URL }}plugin/jquery-3.2.1.min.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/jquery.dataTables.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/jquery.timeago.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/jquery.ajaxprogress.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/jquery.ajaxQueue.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/jquery-ui.custom.js?v={{ VERSION }}"></script>
-    <script src="{{ STATIC_URL }}lib/js/jquery.raty.js?v={{ VERSION }}"></script>
-    <script src="{{ STATIC_URL }}lib/js/bootstrap.min.js?v={{ VERSION }}"></script>
+    <script src="{{ STATIC_URL }}lib/js/jquery.raty.min.js?v={{ VERSION }}"></script>
+    <script src="{{ STATIC_URL }}plugin/bootstrap-3.3.7/js/bootstrap.min.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/bootstrap-select.min.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/moment-with-locales.min.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}lib/js/bootstrap-datetimepicker.min.js?v={{ VERSION }}"></script>

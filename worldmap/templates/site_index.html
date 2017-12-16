@@ -215,6 +215,7 @@ This is where you can override the hero area block. You can simply modify the co
         </div>
       </div>
     </div>
+    <script src="{{ STATIC_URL }}js/base.js"></script>
     <script>
         $(document).ready(function (e) {
             $.ajaxSetup({//set the csrf(Cross-site request forgery) when using ajax, especially the post
@@ -226,5 +227,4 @@ This is where you can override the hero area block. You can simply modify the co
             showMaps("tmi2","latest",0);//load the latest maps of all the category
         });
     </script>
-    <script src="{{ STATIC_URL }}js/base.js"></script>
   {% endblock %}

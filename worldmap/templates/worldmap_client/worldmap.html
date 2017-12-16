@@ -5,23 +5,13 @@
 {% block title %} {{maptitle}}{% endblock %}
 
 {% block head %}
-
-<script src="http://maps.google.com/maps/api/js?v=3&key={{GOOGLE_MAPS_API_KEY}}"></script>
-<script src="http://api.map.baidu.com/api?v=2.0&ak={{BAIDU_MAPS_API_KEY}}"></script>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="{{ STATIC_URL }}plugin/jquery-3.2.1.min.js?v={{ VERSION }}"></script>
 
 {% include "geonode/ext_header.html" %}
 {% include "geonode/app_header.html" %}
 {% include "geonode/geo_header.html" %}
 
 <script type="text/javascript" src="{{ GEONODE_CLIENT_LOCATION }}externals/misc/nicEdit.js"></script>
-
-{% if "gme-" in GOOGLE_API_KEY %}
-    <script src="https://www.google.com/jsapi?client={{GOOGLE_API_KEY}}"></script>
-{% else %}
-    <script src="https://www.google.com/jsapi?key={{GOOGLE_API_KEY}}"></script>
-{% endif %}
 
 <link rel="stylesheet" type="text/css" href="{{ GEONODE_CLIENT_LOCATION }}theme/ux/colorpicker/color-picker.ux.css" />
 <link rel="stylesheet" type="text/css" href="{{ GEONODE_CLIENT_LOCATION }}theme/ux/spinner/Spinner.css" />
@@ -77,23 +67,11 @@
                     toggleGroup: 'featureGroup',
                     actionTarget:  {target: "paneltbar", index: 6}
                 },
-                {
-                    ptype: "gxp_googleearth",
-                    text: '<span class="x-btn-text">{% trans 'Google Earth' %}</span>',
-                    iconCls: null,
-                    actionTarget: {target: "paneltbar", index: 7}
-                },
-                {
-                	ptype: "gxp_streetviewtool",
-                	actionTarget:   {target: "paneltbar", index: 8},
-                    toggleGroup: 'featureGroup'
-                },
-                {
-                	  ptype: "gxp_measure",
+                {ptype: "gxp_measure",
                     toggleGroup: 'featureGroup',
                     text: '<span class="x-btn-text">{% trans 'Measure' %}</span>',
                     iconCls: null,
-                	  actionTarget:   {target: "paneltbar", index: 9}
+                    actionTarget:   {target: "paneltbar", index: 9}
                 },
                 {
                 	ptype: 'gxp_mapshare',

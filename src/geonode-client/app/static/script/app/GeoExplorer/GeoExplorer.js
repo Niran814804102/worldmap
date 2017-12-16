@@ -198,6 +198,8 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
     premiumSizeLabel: 'UT: Premium',
     printTipText: "UT:Print Map",
     printBtnText: "UT:Print",
+    infoActionText: "UT:About",
+    infoBtnText: "UT:About us",
     printWindowTitleText: "UT:Print Preview",
     propertiesText: "UT:Properties",
     publishActionText: 'UT:Link To Map',
@@ -1523,8 +1525,8 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
         // create an info control to show introductory text window
         var infoButton = new Ext.Button({
             id: 'infoButtonId',
-            tooltip: 'About',
-            text: '<span class="x-btn-text">About</span>',
+            tooltip: this.infoActionText,
+            text: '<span class="x-btn-text">' + this.infoBtnText + '</span>',
             handler: this.showInfoWindow,
             scope:this
         });

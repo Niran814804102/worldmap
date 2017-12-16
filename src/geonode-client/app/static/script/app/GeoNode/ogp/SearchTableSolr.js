@@ -23,7 +23,9 @@ GeoNode.SearchTable = Ext.extend(Ext.util.Observable, {
     originatorSearchLabelText: 'Source',
     dataTypeSearchLableText: 'UT: Data Type',
     originatorText: 'Source',
-
+    dateHeaderText: 'Date',
+    fromyearHeaderText: 'from year',
+    toyearHeaderText: 'to year',
     searchOnLoad: false,
     linkableTitle: true,
 
@@ -356,7 +358,7 @@ GeoNode.SearchTable = Ext.extend(Ext.util.Observable, {
                 sortable: true
             },
             {
-                header: 'Date',
+                header: this.dateHeaderText,
                 id: 'date',
                 width: 50,
                 sortable: true,
@@ -490,7 +492,7 @@ GeoNode.SearchTable = Ext.extend(Ext.util.Observable, {
         });
 
         this.dateLabelPanel = new Ext.Panel({
-            items: [new Ext.form.Label({text: 'from year'}), dateStartTextField, new Ext.form.Label({text: 'to year'}), dateEndTextField],
+            items: [new Ext.form.Label({text: this.fromyearHeaderText}), dateStartTextField, new Ext.form.Label({text: this.toyearHeaderText}), dateEndTextField],
             cls: 'search-bar date-form'
         });
 

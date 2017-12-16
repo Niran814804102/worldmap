@@ -105,7 +105,7 @@ msgid ""
 "organization hosting the map service, the source of the data, and the year "
 "or year range the data represents."
 msgstr ""
-"请描述地图服务的制图类型（比如道路、河流特征、历史地图、卫星影像等等），管理地图服务的机构，"
+"请描述地图服务的制图类型（比如道路、河流要素、历史地图、卫星影像等等），管理地图服务的机构，"
 "数据的来源，数据代表的年份或者年份范围。"
 
 
@@ -971,11 +971,11 @@ msgstr "找到地点"
 
 #: worldmap/templates/worldmap_client/worldmap.html:134
 msgid "Create Feature"
-msgstr "创建特征"
+msgstr "创建要素"
 
 #: worldmap/templates/worldmap_client/worldmap.html:135
 msgid "Edit Feature"
-msgstr "编辑特征"
+msgstr "编辑要素"
 
 #: worldmap/templates/worldmap_client/worldmap.html:220
 msgid "Upload a Layer"
@@ -1034,11 +1034,11 @@ msgstr ""
 
 #: worldmap/templates/site_index.html:hottest
 msgid "Hottest Maps"
-msgstr "最新地图"
+msgstr "最热地图"
 
 #: worldmap/templates/site_index.html:latest
 msgid "Latest Maps"
-msgstr "最热地图"
+msgstr "最新地图"
 
 #: worldmap/templates/site_index.html:categories
 msgid "All the categories"
@@ -1081,3 +1081,10 @@ msgid "Structure"
 msgstr "建筑物"
 msgid "Climatology Meteorology Atmosphere"
 msgstr "气候气象"
+
+#: worldmap/templates/base.html:155
+msgid "Don't have an account yet?"
+msgstr "未创建账户？"
+#: worldmap/templates/base.html:61
+msgid "Academic Map Publishing Platform"
+msgstr "学术地图发布平台"

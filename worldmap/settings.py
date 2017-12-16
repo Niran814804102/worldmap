@@ -79,7 +79,7 @@ DEBUG_STATIC = str2bool(os.getenv('DEBUG_STATIC', 'False'))
 
 # This is needed for integration tests, they require
 # geonode to be listening for GeoServer auth requests.
-os.environ['DJANGO_LIVE_TEST_SERVER_ADDRESS'] = 'localhost:8000'
+os.environ['DJANGO_LIVE_TEST_SERVER_ADDRESS'] = '202.121.180.205:8000'
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
 
@@ -578,7 +578,7 @@ EMAIL_ENABLE = True
 
 if EMAIL_ENABLE:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = 'localhost'
+    EMAIL_HOST = '202.121.180.205'
     EMAIL_PORT = 25
     EMAIL_HOST_USER = ''
     EMAIL_HOST_PASSWORD = ''
@@ -626,14 +626,6 @@ _DEFAULT_NOSE_ARGS = [
 #      '--pdb',
       ]
 NOSE_ARGS = os.getenv('NOSE_ARGS',_DEFAULT_NOSE_ARGS)
-
-# this is for the gazetteer
-GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY',"gme-harvarduniversity1")
-# this is for the basemaps
-GOOGLE_MAPS_API_KEY = os.getenv('GOOGLE_MAPS_API_KEY', None)
-BAIDU_MAPS_API_KEY = os.getenv('BAIDU_MAPS_API_KEY', None)
-
-# GOOGLE_SECRET_KEY = None
 
 GEONAMES_USER = ''
 #
@@ -803,7 +795,8 @@ DEFAULT_MAP_CRS = os.getenv('DEFAULT_MAP_CRS',"EPSG:900913")
 #GeoNode Client
 #GEONODE_CLIENT_LOCATION = os.getenv('GEONODE_CLIENT_LOCATION',
 #                                     '/static/worldmap_client/')
-GEONODE_CLIENT_LOCATION = "http://localhost:9090/"
+GEONODE_CLIENT_LOCATION = os.getenv('GEONODE_CLIENT_LOCATION',"http://localhost:9090/")
+
 
 # Where should newly created maps be focused?
 DEFAULT_MAP_CENTER = (0, 0)
@@ -924,40 +917,6 @@ _DEFAULT_MAP_BASELAYERS = [
         "format": "jpeg",
         "tiled" : False,
         "title": "ESRI Dark Gray Reference"
-    },
-    {
-        "source": {
-            "ptype": "gxp_googlesource"
-        },
-        "group": "background",
-        "name": "SATELLITE",
-        "visibility": False,
-        "fixed": True,
-    },
-    {
-        "source": {
-            "ptype": "gxp_googlesource",
-        },
-        "group": "background",
-        "name": "TERRAIN",
-        "visibility": False,
-        "fixed": True,
-    }, {
-        "source": {
-            "ptype": "gxp_googlesource"
-        },
-        "group": "background",
-        "name": "HYBRID",
-        "visibility": False,
-        "fixed": True,
-    }, {
-        "source": {
-            "ptype": "gxp_googlesource"
-        },
-        "group": "background",
-        "name": "ROADMAP",
-        "visibility": False,
-        "fixed": True,
     },
     {
         "source": {
@@ -1097,7 +1056,7 @@ DOWNLOAD_FORMATS_METADATA = [
 ]
 DOWNLOAD_FORMATS_VECTOR = [
     'JPEG', 'PDF', 'PNG', 'Zipped Shapefile', 'GML 2.0', 'GML 3.1.1', 'CSV',
-    'Excel', 'GeoJSON', 'KML', 'View in Google Earth', 'Tiles',
+    'Excel', 'GeoJSON', 'KML', 'Tiles',
 ]
 DOWNLOAD_FORMATS_RASTER = [
     'JPEG',
@@ -1108,7 +1067,6 @@ DOWNLOAD_FORMATS_RASTER = [
     'Gtopo30',
     'ImageMosaic',
     'KML',
-    'View in Google Earth',
     'Tiles',
     'GML',
     'GZIP'
