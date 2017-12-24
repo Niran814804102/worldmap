@@ -134,28 +134,30 @@
         </div>
         <div class="col-md-3 col-sm-3">
           <h4 class="footerTitle">友情链接</h4>
-          <span>浙江大学</span>
+          <span class="footerFont">浙江大学</span>
         </div>
         <div class="col-md-3 col-sm-3">
           <h4 class="footerTitle">版权声明</h4>
-          <span>浙江大学</span>
+          <span class="footerFont">浙江大学</span>
         </div>
         <div class="col-md-3 col-sm-3">
             <h4 class="footerTitle">选择语言</h4>
             <label class="hidden">{% trans "Language" %}</label>
-            {% if csrf_token != "NOTPROVIDED" %}
-            {% get_current_language as LANGUAGE %}
-            <form class="form-inline" action="/i18n/setlang/" method="post">
-            {% csrf_token %}
-              <select class="col-md-6" name="language" onchange="javascript:form.submit()">
-                {% for lang in LANGUAGES %}
-                <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
-                  {{ lang.1 }}
-                </option>
-                {% endfor %}
-              </select>
-            </form>
-            {% endif %}
+            <div style="position:absolute;left:34%">
+              {% if csrf_token != "NOTPROVIDED" %}
+              {% get_current_language as LANGUAGE %}
+              <form class="form-inline" action="/i18n/setlang/" method="post">
+              {% csrf_token %}
+                <select class="col-md-6" name="language" onchange="javascript:form.submit()">
+                  {% for lang in LANGUAGES %}
+                  <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
+                    {{ lang.1 }}
+                  </option>
+                  {% endfor %}
+                </select>
+              </form>
+              {% endif %}
+            </div>
         </div>
       </div>
     </div>

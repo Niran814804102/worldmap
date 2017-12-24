@@ -79,7 +79,7 @@ DEBUG_STATIC = str2bool(os.getenv('DEBUG_STATIC', 'False'))
 
 # This is needed for integration tests, they require
 # geonode to be listening for GeoServer auth requests.
-os.environ['DJANGO_LIVE_TEST_SERVER_ADDRESS'] = '202.121.180.205:8000'
+os.environ['DJANGO_LIVE_TEST_SERVER_ADDRESS'] = '172.20.10.3:8000'
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
 
@@ -578,7 +578,7 @@ EMAIL_ENABLE = True
 
 if EMAIL_ENABLE:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = '202.121.180.205'
+    EMAIL_HOST = '172.20.10.3'
     EMAIL_PORT = 25
     EMAIL_HOST_USER = ''
     EMAIL_HOST_PASSWORD = ''

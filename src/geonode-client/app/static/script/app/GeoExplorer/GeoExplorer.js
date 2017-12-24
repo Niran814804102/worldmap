@@ -1094,7 +1094,7 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
                 var record = records[i];
                 // add an existing layers
                 if ('uuid' in record.data){
-                    if (record.data['service_type'] == 'Hypermap:WorldMap'){
+                    if (record.data['service_type'] == 'Hypermap:WorldMap2'){
                         this.addLayerAjax(wmSource, this.worldMapSourceKey, record);
                     } else {
                         url = this.hypermapRegistryUrl + '/registry/hypermap/layer/' + record.data['uuid'] + '/map/wmts/' + record.data['name'] + '/default_grid/${z}/${x}/${y}.png';
@@ -1156,11 +1156,13 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
             "source": key,
             "buffer": 0,
             "tiled": true,
-            "local": thisRecord.get('service_type') === 'Hypermap:WorldMap'
+            "local": thisRecord.get('service_type') === 'Hypermap:WorldMap2'
         };
-
         if (thisRecord.get('service_type') === 'Hypermap:WorldMap'){
             layer_detail_url = 'http://worldmap.harvard.edu/data/' + thisRecord.get('name');
+        };
+        if (thisRecord.get('service_type') === 'Hypermap:WorldMap2'){
+            layer_detail_url = 'http://172.20.10.3:8000/data/' + thisRecord.get('name');
         };
 
         if(layer.local){

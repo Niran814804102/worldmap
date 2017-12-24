@@ -26,6 +26,7 @@ GeoNode.SearchTable = Ext.extend(Ext.util.Observable, {
     dateHeaderText: 'Date',
     fromyearHeaderText: 'from year',
     toyearHeaderText: 'to year',
+    resetButtonText: 'Reset',
     searchOnLoad: false,
     linkableTitle: true,
 
@@ -246,9 +247,11 @@ GeoNode.SearchTable = Ext.extend(Ext.util.Observable, {
         if (this.queryInput.getValue() === ''){
             GeoNode.queryTerms.q = '*';
         }
+        else{
+            GeoNode.queryTerms.q = '*' + this.queryInput.getValue() + '*'; 
+        }
 
         GeoNode.queryTerms.start = 0;
-
         // now trigger the heatmap update
         this.heatmap.fireEvent('fireSearch', false);
 
@@ -416,6 +419,7 @@ GeoNode.SearchTable = Ext.extend(Ext.util.Observable, {
 
         layers_data = [
             ['', 'All Layers'],
+            ['service_type:"Hypermap:WorldMap2"', 'AcadamicMap Layers'],
             ['service_type:"Hypermap:WorldMap"', 'WorldMap Layers'],
             ['service_type:"OGC:WMS"', 'WMS'],
             ['service_type:"ESRI:ArcGIS:ImageServer"', 'ESRI Image'],
@@ -520,7 +524,7 @@ GeoNode.SearchTable = Ext.extend(Ext.util.Observable, {
         searchButton.on('click', this.updateQuery, this);
 
         var clearSearchLink = new Ext.Button({
-            text: "Reset",
+            text: this.resetButtonText,
             iconCls: 'not-prominent-btn',
             cls: 'search-bar clear-search-button',
             listeners: {

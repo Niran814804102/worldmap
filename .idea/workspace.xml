@@ -4537,7 +4537,7 @@
       <file leaf-file-name="django.po" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worldmap/locale/zh/LC_MESSAGES/django.po">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
+            <state relative-caret-position="13392">
               <caret line="744" column="13" lean-forward="false" selection-start-line="744" selection-start-column="6" selection-end-line="744" selection-end-column="13" />
               <folding />
             </state>
@@ -4547,7 +4547,7 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worldmap/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
+            <state relative-caret-position="2574">
               <caret line="143" column="45" lean-forward="false" selection-start-line="143" selection-start-column="45" selection-end-line="143" selection-end-column="45" />
               <folding>
                 <marker date="1513337618427" expanded="true" signature="4574:4740" ph="{% if user.is_authenticated ... %}" />
@@ -4559,8 +4559,8 @@
       <file leaf-file-name="worldmap.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worldmap/templates/worldmap_client/worldmap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="73" column="46" lean-forward="true" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+            <state relative-caret-position="1314">
+              <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -4569,33 +4569,43 @@
       <file leaf-file-name="SearchTableSolr.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoNode/ogp/SearchTableSolr.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="247">
+              <caret line="423" column="54" lean-forward="false" selection-start-line="423" selection-start-column="54" selection-end-line="423" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeoExplorer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GeoExplorer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoExplorer/GeoExplorer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="137" column="19" lean-forward="true" selection-start-line="137" selection-start-column="19" selection-end-line="137" selection-end-column="19" />
+            <state relative-caret-position="247">
+              <caret line="1097" column="37" lean-forward="false" selection-start-line="1097" selection-start-column="37" selection-end-line="1097" selection-end-column="37" />
               <folding>
-                <marker date="1513430843601" expanded="true" signature="55337:55421" ph="{&quot;id&quot;: 'infoButtonId'...}" />
-                <marker date="1513430843601" expanded="true" signature="59623:59638" ph="..." />
-                <marker date="1513430843601" expanded="true" signature="59738:59753" ph="..." />
-                <marker date="1513430843601" expanded="true" signature="63710:63728" ph="..." />
+                <marker date="1513776230830" expanded="true" signature="55340:55424" ph="{&quot;id&quot;: 'infoButtonId'...}" />
+                <marker date="1513776230830" expanded="true" signature="59626:59641" ph="..." />
+                <marker date="1513776230830" expanded="true" signature="59741:59756" ph="..." />
+                <marker date="1513776230830" expanded="true" signature="63713:63731" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Measure.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Measure.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/Measure.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="200" column="29" lean-forward="true" selection-start-line="200" selection-start-column="29" selection-end-line="200" selection-end-column="29" />
+            <state relative-caret-position="3618">
+              <caret line="207" column="42" lean-forward="false" selection-start-line="207" selection-start-column="42" selection-end-line="208" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worldmap/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="81" column="52" lean-forward="false" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -4605,10 +4615,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>world</find>
-      <find>link</find>
-      <find>body.png</find>
-      <find>wrap</find>
       <find>padding</find>
       <find>LANGUAGE_CODE</find>
       <find>footer</find>
@@ -4633,8 +4639,12 @@
       <find>&quot;Search</find>
       <find>from y</find>
       <find>buttonText</find>
-      <find>text</find>
       <find>measure</find>
+      <find>text</find>
+      <find>202</find>
+      <find>addWorldMapLayers</find>
+      <find>reloadWorldMapSource</find>
+      <find>Hypermap:WorldMap</find>
     </findStrings>
     <replaceStrings>
       <replace>Baidu</replace>
@@ -4677,10 +4687,10 @@
         <option value="$PROJECT_DIR$/src/geonode-client/buildjs.cfg" />
         <option value="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/locale/zh-cn.js" />
         <option value="$PROJECT_DIR$/worldmap/settings.py" />
-        <option value="$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoNode/ogp/SearchTableSolr.js" />
-        <option value="$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoExplorer/GeoExplorer.js" />
         <option value="$PROJECT_DIR$/worldmap/templates/worldmap_client/worldmap.html" />
         <option value="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/Measure.js" />
+        <option value="$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoNode/ogp/SearchTableSolr.js" />
+        <option value="$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoExplorer/GeoExplorer.js" />
       </list>
     </option>
   </component>
@@ -4712,6 +4722,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -4795,19 +4806,6 @@
               <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="externals" type="462c0819:PsiDirectoryNode" />
-              <item name="gxp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="script" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -4865,7 +4863,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4998,19 +4995,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1375" height="904" extended-state="6" />
+    <frame x="277" y="286" width="1377" height="912" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2317532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23927765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19870968" sideWeight="0.5170909" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34962407" sideWeight="0.49730146" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34962407" sideWeight="0.49730146" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31870967" sideWeight="0.48290908" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31870967" sideWeight="0.48290908" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -5042,9 +5039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="141" column="120" lean-forward="false" selection-start-line="141" selection-start-column="87" selection-end-line="141" selection-end-column="120" />
-          <folding>
-            <element signature="e#838#889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5202,7 +5196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5210,15 +5203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worldmap/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5226,7 +5210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="69" column="44" lean-forward="false" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5234,7 +5217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="202" column="2" lean-forward="true" selection-start-line="202" selection-start-column="2" selection-end-line="202" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5242,7 +5224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5250,7 +5231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
           <caret line="598" column="0" lean-forward="true" selection-start-line="598" selection-start-column="0" selection-end-line="598" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5258,17 +5238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="293" column="13" lean-forward="false" selection-start-line="293" selection-start-column="8" selection-end-line="293" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worldmap/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="143" column="45" lean-forward="false" selection-start-line="143" selection-start-column="45" selection-end-line="143" selection-end-column="45" />
-          <folding>
-            <marker date="1513337618427" expanded="true" signature="4574:4740" ph="{% if user.is_authenticated ... %}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5276,7 +5245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5284,7 +5252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5292,7 +5259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5300,7 +5266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5308,7 +5273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5316,10 +5280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="60" />
-          <folding>
-            <marker date="1511942616944" expanded="true" signature="9747:9753" ph="..." />
-            <marker date="1511942616944" expanded="true" signature="9855:9861" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5327,7 +5287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2906">
           <caret line="176" column="17" lean-forward="false" selection-start-line="176" selection-start-column="13" selection-end-line="176" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5335,10 +5294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <marker date="1511942616956" expanded="true" signature="2312:2318" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5346,7 +5301,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5354,7 +5308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5362,9 +5315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-594">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5372,7 +5322,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3294">
           <caret line="198" column="30" lean-forward="false" selection-start-line="198" selection-start-column="30" selection-end-line="198" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5380,17 +5329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worldmap/locale/zh/LC_MESSAGES/django.po">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="744" column="13" lean-forward="false" selection-start-line="744" selection-start-column="6" selection-end-line="744" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5398,44 +5336,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worldmap/locale/zh/LC_MESSAGES/django.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13392">
+          <caret line="744" column="13" lean-forward="false" selection-start-line="744" selection-start-column="6" selection-end-line="744" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worldmap/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2574">
+          <caret line="143" column="45" lean-forward="false" selection-start-line="143" selection-start-column="45" selection-end-line="143" selection-end-column="45" />
+          <folding>
+            <marker date="1513337618427" expanded="true" signature="4574:4740" ph="{% if user.is_authenticated ... %}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/Measure.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3618">
+          <caret line="207" column="42" lean-forward="false" selection-start-line="207" selection-start-column="42" selection-end-line="208" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worldmap/templates/worldmap_client/worldmap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1314">
+          <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worldmap/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="81" column="52" lean-forward="false" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoNode/ogp/SearchTableSolr.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="247">
+          <caret line="423" column="54" lean-forward="false" selection-start-line="423" selection-start-column="54" selection-end-line="423" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoExplorer/GeoExplorer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="137" column="19" lean-forward="true" selection-start-line="137" selection-start-column="19" selection-end-line="137" selection-end-column="19" />
+        <state relative-caret-position="247">
+          <caret line="1097" column="37" lean-forward="false" selection-start-line="1097" selection-start-column="37" selection-end-line="1097" selection-end-column="37" />
           <folding>
-            <marker date="1513430843601" expanded="true" signature="55337:55421" ph="{&quot;id&quot;: 'infoButtonId'...}" />
-            <marker date="1513430843601" expanded="true" signature="59623:59638" ph="..." />
-            <marker date="1513430843601" expanded="true" signature="59738:59753" ph="..." />
-            <marker date="1513430843601" expanded="true" signature="63710:63728" ph="..." />
+            <marker date="1513776230830" expanded="true" signature="55340:55424" ph="{&quot;id&quot;: 'infoButtonId'...}" />
+            <marker date="1513776230830" expanded="true" signature="59626:59641" ph="..." />
+            <marker date="1513776230830" expanded="true" signature="59741:59756" ph="..." />
+            <marker date="1513776230830" expanded="true" signature="63713:63731" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worldmap/templates/worldmap_client/worldmap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="73" column="46" lean-forward="true" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/Measure.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="200" column="29" lean-forward="true" selection-start-line="200" selection-start-column="29" selection-end-line="200" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
