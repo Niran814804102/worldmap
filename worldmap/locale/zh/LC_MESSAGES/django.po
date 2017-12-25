@@ -1088,3 +1088,25 @@ msgstr "未创建账户？"
 #: worldmap/templates/base.html:61
 msgid "Academic Map Publishing Platform"
 msgstr "学术地图发布平台"
+
+#: worldmap/templates/base.html:133
+msgid "Zhejiang University"
+msgstr "浙江大学"
+msgid "Harvard University"
+msgstr "哈佛大学"
+msgid "Copyright Notice"
+msgstr "版权声明"
+msgid "All rights reserved"
+msgstr "版权所有"
+msgid "Choose Language"
+msgstr "语言选择"
+
+#: worldmap/templates/site_index.html:88
+msgid "About Us"
+msgstr "关于我们"
+msgid "About GeoNode"
+msgstr "关于GeoNode"
+
+#: worldmap/templates/aboutus.html:23
+msgid "Disclaimer"
+msgstr "免责声明"

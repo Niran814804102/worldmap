@@ -128,36 +128,40 @@
       <img src="{{ STATIC_URL }}img/title_small.png"/>
       <hr/>
       <div class="row footerContent">
-        <div class="col-md-3 col-sm-3">
+        <div class="col-md-4 col-sm-4">
           <h4 class="footerTitle">{%  trans "Contact Us" %}</h4>
-          <span class="footerFont">地址：浙江大学西溪校区</span>
+          <span class="footerFont">
+              <a href='http://www.harvard.edu'>{%  trans "Zhejiang University" %}</a>
+              <br>
+              <a href='http://www.harvard.edu'>{%  trans "Harvard University" %}</a>
+          </span>
         </div>
-        <div class="col-md-3 col-sm-3">
-          <h4 class="footerTitle">友情链接</h4>
-          <span class="footerFont">浙江大学</span>
+        <div class="col-md-4 col-sm-4">
+          <h4 class="footerTitle">{%  trans "Copyright Notice" %}</h4>
+          <span>
+              <a href="/aboutus/#copyright">{% trans "All rights reserved" %}</a>
+              <br>
+              <a href="/aboutus/#disclaimer">{%  trans "Disclaimer" %}</a>
+          </span>
         </div>
-        <div class="col-md-3 col-sm-3">
-          <h4 class="footerTitle">版权声明</h4>
-          <span class="footerFont">浙江大学</span>
-        </div>
-        <div class="col-md-3 col-sm-3">
-            <h4 class="footerTitle">选择语言</h4>
+        <div class="col-md-4 col-sm-4">
+            <h4 class="footerTitle">{%  trans "Choose Language" %}</h4>
             <label class="hidden">{% trans "Language" %}</label>
-            <div style="position:absolute;left:34%">
-              {% if csrf_token != "NOTPROVIDED" %}
-              {% get_current_language as LANGUAGE %}
-              <form class="form-inline" action="/i18n/setlang/" method="post">
-              {% csrf_token %}
-                <select class="col-md-6" name="language" onchange="javascript:form.submit()">
-                  {% for lang in LANGUAGES %}
-                  <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
-                    {{ lang.1 }}
-                  </option>
-                  {% endfor %}
-                </select>
-              </form>
-              {% endif %}
+            {% if csrf_token != "NOTPROVIDED" %}
+            {% get_current_language as LANGUAGE %}
+            <div style="position: absolute;left: 30%">
+            <form class="form-inline" action="/i18n/setlang/" method="post">
+            {% csrf_token %}
+              <select style="width: 100%" name="language" onchange="javascript:form.submit()">
+                {% for lang in LANGUAGES %}
+                <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
+                  {{ lang.1 }}
+                </option>
+                {% endfor %}
+              </select>
+            </form>
             </div>
+            {% endif %}
         </div>
       </div>
     </div>

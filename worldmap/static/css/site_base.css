@@ -119,11 +119,11 @@ footer {
 }
 
 footer a {
-  color: #bfbfbf;
+  color: #2c689c;
 }
 
 footer a:hover {
-  color: #fff;
+  color: #000FE8;
 }
 
 #permissions-body .panel .radio{

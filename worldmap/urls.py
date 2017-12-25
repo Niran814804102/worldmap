@@ -71,6 +71,8 @@ urlpatterns = patterns('',
                        url(r'^help/$', TemplateView.as_view(template_name='help.html'), name='help'),
                        url(r'^developer/$', TemplateView.as_view(template_name='developer.html'), name='developer'),
                        url(r'^about/$', TemplateView.as_view(template_name='about.html'), name='about'),
+                       url(r'^aboutus/$', TemplateView.as_view(template_name='aboutus.html'), name='aboutus'),
+                       url(r'^aboutgeonode/$', TemplateView.as_view(template_name='about.html'), name='aboutgeonode'),
                        url(r'^upload_terms/$', TemplateView.as_view(template_name='upload_terms.html'), name='upload_terms'),
                         # TODO add urls to get the category_list and hottest/latest maps
                        url(r'^getCategory/', get_categorys, name='getCategory'),
