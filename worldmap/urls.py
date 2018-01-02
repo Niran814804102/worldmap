@@ -38,7 +38,7 @@ from wm_extra.views import (proxy, ajax_layer_update, ajax_layer_edit_check, upl
     create_pg_layer, ajax_increment_layer_stats, new_map_wm, map_view_wm,
     add_layer_wm, add_endpoint, get_categorys, get_most_maps)
 from tastypie.api import Api
-from wm_extra.api.resources import LayerResource, TagResource, TopicCategoryResource
+from wm_extra.api.resources import LayerResource, TagResource, TopicCategoryResource, ActionLayerDeleteResource
 from wm_extra.accounts.views import SignupView
 from geonode.maps.views import snapshot_create
 
@@ -62,6 +62,7 @@ wm_api = Api(api_name='2.6')
 wm_api.register(LayerResource())
 wm_api.register(TagResource())
 wm_api.register(TopicCategoryResource())
+wm_api.register(ActionLayerDeleteResource())
 
 # main urlpatterns for GeoNode
 urlpatterns = patterns('',

@@ -552,8 +552,8 @@ GeoNode.SearchTable = Ext.extend(Ext.util.Observable, {
                     this.queryInput,
                     this.originatorInput,
                     this.dataTypeInput, //dropdown
-                    searchButton,
-                    clearSearchLink
+                    clearSearchLink,
+                    searchButton
                 ],
                 colspan: 4
             },{
