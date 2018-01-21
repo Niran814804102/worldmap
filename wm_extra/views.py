@@ -556,13 +556,16 @@ def official_site(request, site):
 def get_categorys(request):
     """
     return the category
-    :param request:
+    :param request: language
     :return:
     """
-    categorys = TopicCategory.objects.all().values('id','gn_description')
+    if request.POST.has_key('language'):
+        language = request.POST['language']
+        key = 'gn_description' if language != 'zh-cn' else 'gn_description_zh_cn'
+    categorys = TopicCategory.objects.all().values('id',key)
     category_dict ={}
     for category in categorys:
-        category_dict[category['id']] = [category['gn_description']]
+        category_dict[category['id']] = [category[key]]
     categoryjson = json.dumps(category_dict)
     # from django.utils import simplejson
     # return HttpResponse(simplejson.dumps(category, ensure_ascii=False))
