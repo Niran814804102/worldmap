@@ -212,9 +212,9 @@ EXTRA_LANG_INFO = {
 
 AUTH_USER_MODEL = os.getenv('AUTH_USER_MODEL', 'people.Profile')
 
-MODELTRANSLATION_LANGUAGES = ['en', ]
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
-MODELTRANSLATION_FALLBACK_LANGUAGES = ('en',)
+MODELTRANSLATION_LANGUAGES = ['zh-cn', ]
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'zh-cn'
+MODELTRANSLATION_FALLBACK_LANGUAGES = ('zh-cn',)
 
 
 # Absolute path to the directory that holds media.
@@ -692,7 +692,7 @@ OGC_SERVER = {
         'BACKEND_WRITE_ENABLED': True,
         'WPS_ENABLED': False,
         'LOG_FILE': '%s/geoserver/data/logs/geoserver.log'
-        % os.path.abspath(os.path.join(PROJECT_ROOT, os.pardir)),
+        % os.path.abspath(os.path.join(GEONODE_ROOT, os.pardir)),
         # Set to name of database in DATABASES dictionary to enable
         'DATASTORE': 'datastore',
         'PG_GEOGIG': False,
@@ -920,7 +920,7 @@ _DEFAULT_MAP_BASELAYERS = [
     },
     {
         "source": {
-            "ptype": "gxp_baidusource"
+            "ptype": "gxp_tianditusource"
         },
         "group": "background",
         "name": "TIANDITUROAD",
@@ -929,7 +929,7 @@ _DEFAULT_MAP_BASELAYERS = [
     },
     {
         "source": {
-            "ptype": "gxp_baidusource",
+            "ptype": "gxp_tianditusource",
         },
         "group": "background",
         "name": "TIANDITUIMAGE",
@@ -937,7 +937,7 @@ _DEFAULT_MAP_BASELAYERS = [
         "fixed": True,
     }, {
         "source": {
-            "ptype": "gxp_baidusource"
+            "ptype": "gxp_tianditusource"
         },
         "group": "background",
         "name": "TIANDITUTERRAIN",
@@ -945,7 +945,7 @@ _DEFAULT_MAP_BASELAYERS = [
         "fixed": True,
     }, {
         "source": {
-            "ptype": "gxp_baidusource"
+            "ptype": "gxp_tianditusource"
         },
         "group": "background",
         "name": "TIANDITUANNOTATION",

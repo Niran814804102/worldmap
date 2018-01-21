@@ -14,7 +14,7 @@ function selectOnChange2(obj){
 	var value = obj.options[obj.selectedIndex].value;
 	showMaps("tmi2","latest", value);
 }
-function showCategorys(){
+function showCategorys(language){
 	var url = "/getCategory/";
 	var data = null;
 	var csrftoken = getCookie('csrftoken');
@@ -23,6 +23,9 @@ function showCategorys(){
 		async: false,
 		cache: false,
 		type: "POST",
+        data: {
+            language : language
+        },
 		success: function (res) {
 			data = $.parseJSON(res);
 		},
@@ -30,14 +33,16 @@ function showCategorys(){
 		  xhr.setRequestHeader("X-CSRFToken", csrftoken);
 		}
 	});
-	var selectHTML = "<option value=0>All the Category</option>";
+	var selectHTML = '';
 	for(category in data){
 		var categoryid = parseInt(category);
 		var categorydescription = data[category][0];
 		selectHTML += "<option value="+categoryid+">"+categorydescription+"</option>"
 	}
-	$("#category1").html(selectHTML);
-	$("#category2").html(selectHTML);
+	$("#category1").append(selectHTML);
+	$("#category2").append(selectHTML);
+    $('#category1').selectpicker('refresh');
+    $('#category2').selectpicker('refresh');
 }
 function showMaps(divIdPrefix, type, category){
 	var result = null;

@@ -94,25 +94,6 @@ This is where you can override the hero area block. You can simply modify the co
             <br>{% trans "Hottest Maps" %}
             <select id="category1" class="selectpicker" data-style="btn-primary" onchange="selectOnChange1(this)">
                 <option value=0>{% trans "All the categories" %}</option>
-                <option value=1>{% trans "Geoscientific Information" %}</option>
-                <option value=2>{% trans "Farming" %}</option>
-                <option value=3>{% trans "Elevation" %}</option>
-                <option value=4>{% trans "Utilities Communication" %}</option>
-                <option value=5>{% trans "Oceans" %}</option>
-                <option value=6>{% trans "Boundaries" %}</option>
-                <option value=7>{% trans "Inland Waters" %}</option>
-                <option value=8>{% trans "Intelligence Military" %}</option>
-                <option value=9>{% trans "Environment" %}</option>
-                <option value=10>{% trans "Location" %}</option>
-                <option value=11>{% trans "Economy" %}</option>
-                <option value=12>{% trans "Planning Cadastre" %}</option>
-                <option value=13>{% trans "Biota" %}</option>
-                <option value=14>{% trans "Health" %}</option>
-                <option value=15>{% trans "Imagery Base Maps Earth Cover" %}</option>
-                <option value=16>{% trans "Transportation" %}</option>
-                <option value=17>{% trans "Society" %}</option>
-                <option value=18>{% trans "Structure" %}</option>
-                <option value=19>{% trans "Climatology Meteorology Atmosphere" %}</option>
             </select>
         </div>
         <div id="thematic1" class="subMapList custom-scrollbar">
@@ -147,9 +128,9 @@ This is where you can override the hero area block. You can simply modify the co
         <!--latest map Start-->
         <div class="subMapListTitle">
             <br>{% trans "Latest Maps" %}
-            <select id="category2" class="selectpicker" data-style="btn-primary" onchange="selectOnChange2(this)">
-                <option value=0 >{% trans "All the categories" %}</option>
-                <option value=1>{% trans "Geoscientific Information" %}</option>
+            <select id="category2" class="selectpicker" data-style="btn-primary" onchange="selectOnChange2(this)" >
+                 <option value=0>{% trans "All the categories" %}</option>
+<!--                 <option value=1>{% trans "Geoscientific Information" %}</option>
                 <option value=2>{% trans "Farming" %}</option>
                 <option value=3>{% trans "Elevation" %}</option>
                 <option value=4>{% trans "Utilities Communication" %}</option>
@@ -168,6 +149,7 @@ This is where you can override the hero area block. You can simply modify the co
                 <option value=17>{% trans "Society" %}</option>
                 <option value=18>{% trans "Structure" %}</option>
                 <option value=19>{% trans "Climatology Meteorology Atmosphere" %}</option>
+                <option value=20>{% trans "humanity" %}</option> -->
             </select>
         </div>
         <div id="thematic2" class="subMapList custom-scrollbar">
@@ -222,7 +204,7 @@ This is where you can override the hero area block. You can simply modify the co
             $.ajaxSetup({//set the csrf(Cross-site request forgery) when using ajax, especially the post
                     data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
                 });
-            //showCategorys();//load the dropdown menu of category
+            showCategorys("{{ LANGUAGE_CODE }}");//load the dropdown menu of category
             showMaps("tmi0","admin",0);//load the maps created by admin
             showMaps("tmi1","hottest",0);//load the hottest maps of all the category
             showMaps("tmi2","latest",0);//load the latest maps of all the category

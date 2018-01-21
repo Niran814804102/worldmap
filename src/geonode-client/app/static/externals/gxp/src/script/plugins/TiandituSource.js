@@ -8,12 +8,12 @@
 
 /**
  * @requires plugins/LayerSource.js
- * @requires OpenLayers/Layer/Baidu/v3.js
+ * @requires OpenLayers/Layer/Tianditu/v3.js
  */
 
 /** api: (define)
  *  module = gxp.plugins
- *  class = BaiduSource
+ *  class = TiandituSource
  */
 
 /** api: (extends)
@@ -22,11 +22,11 @@
 Ext.namespace("gxp.plugins");
 
 /** api: constructor
- *  .. class:: BaiduSource(config)
+ *  .. class:: TiandituSource(config)
  *
- *    Plugin for using Baidu layers with :class:`gxp.Viewer` instances. The
+ *    Plugin for using Tianditu layers with :class:`gxp.Viewer` instances. The
  *    plugin uses the BMaps v3 API and also takes care of loading the
- *    required Baidu resources.
+ *    required Tianditu resources.
  *
  *    Available layer names for this source are "ROADMAP", "SATELLITE",
  *    "HYBRID" and "TERRAIN"
@@ -37,8 +37,8 @@ Ext.namespace("gxp.plugins");
  *
  *  .. code-block:: javascript
  *
- *    "baidu": {
- *        ptype: "gxp_baidu"
+ *    "tianditu": {
+ *        ptype: "gxp_tianditu"
  *    }
  *
  *  A typical configuration for a layer from this source (in the ``layers``
@@ -47,19 +47,19 @@ Ext.namespace("gxp.plugins");
  *  .. code-block:: javascript
  *
  *    {
- *        source: "baidu",
+ *        source: "tianditu",
  *        name: "TERRAIN"
  *    }
  *
  */
-gxp.plugins.BaiduSource = Ext.extend(gxp.plugins.LayerSource, {
+gxp.plugins.TiandituSource = Ext.extend(gxp.plugins.LayerSource, {
 
-    /** api: ptype = gxp_baidusource */
-    ptype: "gxp_baidusource",
+    /** api: ptype = gxp_tianditusource */
+    ptype: "gxp_tianditusource",
 
     /** config: config[timeout]
      *  ``Number``
-     *  The time (in milliseconds) to wait before giving up on the Baidu Maps
+     *  The time (in milliseconds) to wait before giving up on the Tianditu Maps
      *  script loading.  This layer source will not be availble if the script
      *  does not load within the given timeout.  Default is 7000 (seven seconds).
      */
@@ -74,7 +74,7 @@ gxp.plugins.BaiduSource = Ext.extend(gxp.plugins.LayerSource, {
      *  ``String``
      *  A descriptive title for this layer source (i18n).
      */
-    title: "Baidu Layers",
+    title: "Tianditu Layers",
     tiandituroadAbstract: "Show tiandituRoad",
     tiandituimageAbstract: "Show tiandituImage",
     tiandituterrainAbstract: "Show tiandituTerrain",
@@ -89,14 +89,14 @@ gxp.plugins.BaiduSource = Ext.extend(gxp.plugins.LayerSource, {
     tiandituannotationURL: "http://t4.tianditu.com/DataServer?T=cia_w&X=${x}&Y=${y}&L=${z}",
     /** api: config[otherParams]
      *  ``String``
-     *  Additional parameters to be sent to Baidu,
+     *  Additional parameters to be sent to Tianditu,
      *  default is "sensore=false"
      */
     otherParams: "sensor=false",
 
     constructor: function(config) {
         this.config = config;
-        gxp.plugins.BaiduSource.superclass.constructor.apply(this, arguments);
+        gxp.plugins.TiandituSource.superclass.constructor.apply(this, arguments);
     },
 
     /** api: method[createStore]
@@ -198,4 +198,4 @@ gxp.plugins.BaiduSource = Ext.extend(gxp.plugins.LayerSource, {
 
 });
 
-Ext.preg(gxp.plugins.BaiduSource.prototype.ptype, gxp.plugins.BaiduSource);
+Ext.preg(gxp.plugins.TiandituSource.prototype.ptype, gxp.plugins.TiandituSource);

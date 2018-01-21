@@ -267,7 +267,7 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
         Ext.preg("gx_wmssource", gxp.plugins.WMSSource);
         Ext.preg("gx_olsource", gxp.plugins.OLSource);
         Ext.preg("gx_googlesource", gxp.plugins.GoogleSource);
-        Ext.preg("gx_baidusource", gxp.plugins.BaiduSource);
+        Ext.preg("gx_tianditusource", gxp.plugins.TiandituSource);
         Ext.preg("gx_gnsource", gxp.plugins.GeoNodeSource);
 
         // global request proxy and error handling
@@ -1162,7 +1162,7 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
             layer_detail_url = 'http://worldmap.harvard.edu/data/' + thisRecord.get('name');
         };
         if (thisRecord.get('service_type') === 'Hypermap:WorldMap2'){
-            layer_detail_url = 'http://172.20.10.3:8000/data/' + thisRecord.get('name');
+            layer_detail_url = 'http://localhost:8000/data/' + thisRecord.get('name');
         };
 
         if(layer.local){

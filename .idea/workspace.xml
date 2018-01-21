@@ -5,6 +5,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/locale/zh-cn.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worldmap/static/js/base.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/locale/zh_CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/BaiduSource.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/development.db" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/bootstrap-3.3.7/css/bootstrap-theme.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/bootstrap-3.3.7/css/bootstrap-theme.css.map" afterPath="" />
@@ -22,9 +23,31 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/bootstrap-3.3.7/js/bootstrap.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/bootstrap-3.3.7/js/bootstrap.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/bootstrap-3.3.7/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/ForgetPassword.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/ModifyPwd.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/Register.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/adminPanel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/agreement.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/legend.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/measure.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/olpopup.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/searchLayer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/searchMapPage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/searchMapPage2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/uplayerAnimate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/uplayerPage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/uplayerPagePlug.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/css/userCenter.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/js/index.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/js/mapv.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/js/mapv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/script3/GeoExplorer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/script3/GeoExt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/script3/GeoNode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/script3/OpenLayers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/script3/PrintPreview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/script3/gxp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/script3/ux.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static_root/README" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static_root/admin/css/base.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/static_root/admin/css/changelists.css" afterPath="" />
@@ -4491,6 +4514,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/uploaded/layers/river_basin_num2.prj" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/uploaded/layers/river_basin_num2.shp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/uploaded/layers/river_basin_num2.shx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/uploaded/layers/river_basin_num2_1.dbf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/uploaded/layers/river_basin_num2_1.prj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/uploaded/layers/river_basin_num2_1.shp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/uploaded/layers/river_basin_num2_1.shx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/uploaded/thumbs/layer-057155f6-d0f1-11e7-9b8f-000c29b70547-thumb.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/uploaded/thumbs/layer-751b16f4-d0f0-11e7-9b8f-000c29b70547-thumb.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/worldmap/uploaded/thumbs/layer-e2a25df2-d0f2-11e7-9b8f-000c29b70547-thumb.png" afterPath="" />
@@ -4502,18 +4529,50 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/static/img/slide-japan.jpg" afterPath="$PROJECT_DIR$/worldmap/static/img/slide-japan.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/static/img/title.png" afterPath="$PROJECT_DIR$/worldmap/static/img/title.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/static/img/title_small.png" afterPath="$PROJECT_DIR$/worldmap/static/img/title_small.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/main.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/geoext/lib/GeoExt/data/PrintProvider.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/geoext/lib/GeoExt/data/PrintProvider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/catalogue.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/catalogue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/layer-properties.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/layer-properties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/layer-upload.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/layer-upload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/projection.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/projection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/query.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/query.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/viewer-field.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/viewer-field.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/viewer-layermanager.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/viewer-layermanager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/viewer-lazy.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/viewer-lazy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/viewer.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/viewer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/wfsfeaturestore.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/examples/wfsfeaturestore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/data/FeatureTypeClassifier.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/data/FeatureTypeClassifier.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/loader.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/loader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/locale/en.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/locale/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/AddLayers.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/AddLayers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/GeoServerStyleWriter.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/GeoServerStyleWriter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/MapShare.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/MapShare.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/Measure.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/Measure.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/WMSSource.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/WMSSource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/tests/script/plugins/Styler.html" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/tests/script/plugins/Styler.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/tests/script/widgets/QueryPanel.html" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/tests/script/widgets/QueryPanel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/tests/script/widgets/WMSStylesDialog.html" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/tests/script/widgets/WMSStylesDialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/index.html" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoExplorer/GeoExplorer.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoExplorer/GeoExplorer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoNode/ogp/SearchTableSolr.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoNode/ogp/SearchTableSolr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoNode/ogp/ogpConfig.js" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoNode/ogp/ogpConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/app/static/theme/app/geoexplorer_white.css" afterPath="$PROJECT_DIR$/src/geonode-client/app/static/theme/app/geoexplorer_white.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/build/geonode-client/WEB-INF/app/main.js" afterPath="$PROJECT_DIR$/src/geonode-client/build/geonode-client/WEB-INF/app/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/build/geonode-client/WEB-INF/app/static/index.html" afterPath="$PROJECT_DIR$/src/geonode-client/build/geonode-client/WEB-INF/app/static/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/build/geonode-client/WEB-INF/app/static/theme/app/geoexplorer_white.css" afterPath="$PROJECT_DIR$/src/geonode-client/build/geonode-client/WEB-INF/app/static/theme/app/geoexplorer_white.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geonode-client/buildjs.cfg" afterPath="$PROJECT_DIR$/src/geonode-client/buildjs.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wm_extra/api/resources.py" afterPath="$PROJECT_DIR$/wm_extra/api/resources.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wm_extra/views.py" afterPath="$PROJECT_DIR$/wm_extra/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/context_processors.py" afterPath="$PROJECT_DIR$/worldmap/context_processors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/local_settings_py.sample" afterPath="$PROJECT_DIR$/worldmap/local_settings_py.sample" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/locale/zh/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/worldmap/locale/zh/LC_MESSAGES/django.po" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/settings.py" afterPath="$PROJECT_DIR$/worldmap/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/static/css/index.css" afterPath="$PROJECT_DIR$/worldmap/static/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/static/css/site_base.css" afterPath="$PROJECT_DIR$/worldmap/static/css/site_base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/index.html" afterPath="$PROJECT_DIR$/worldmap/static/worldmap_client/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/script/GeoExplorer.js" afterPath="$PROJECT_DIR$/worldmap/static/worldmap_client/script/GeoExplorer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/script/gxp.js" afterPath="$PROJECT_DIR$/worldmap/static/worldmap_client/script/gxp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/static/worldmap_client/theme/app/geoexplorer_white.css" afterPath="$PROJECT_DIR$/worldmap/static/worldmap_client/theme/app/geoexplorer_white.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/templates/base.html" afterPath="$PROJECT_DIR$/worldmap/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/templates/site_index.html" afterPath="$PROJECT_DIR$/worldmap/templates/site_index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worldmap/templates/worldmap_client/worldmap.html" afterPath="$PROJECT_DIR$/worldmap/templates/worldmap_client/worldmap.html" />
@@ -4527,76 +4586,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/worldmap$debug.coverage" NAME="debug Coverage Results" MODIFIED="1513410704414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/worldmap$debug.coverage" NAME="debug Coverage Results" MODIFIED="1516354562873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="django.po" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worldmap/locale/zh/LC_MESSAGES/django.po">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13392">
-              <caret line="744" column="13" lean-forward="false" selection-start-line="744" selection-start-column="6" selection-end-line="744" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worldmap/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2574">
-              <caret line="143" column="45" lean-forward="false" selection-start-line="143" selection-start-column="45" selection-end-line="143" selection-end-column="45" />
-              <folding>
-                <marker date="1513337618427" expanded="true" signature="4574:4740" ph="{% if user.is_authenticated ... %}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="worldmap.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worldmap/templates/worldmap_client/worldmap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1314">
+            <state relative-caret-position="0">
               <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchTableSolr.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoNode/ogp/SearchTableSolr.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="423" column="54" lean-forward="false" selection-start-line="423" selection-start-column="54" selection-end-line="423" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeoExplorer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GeoExplorer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoExplorer/GeoExplorer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="1097" column="37" lean-forward="false" selection-start-line="1097" selection-start-column="37" selection-end-line="1097" selection-end-column="37" />
+            <state relative-caret-position="121">
+              <caret line="1090" column="65" lean-forward="true" selection-start-line="1090" selection-start-column="65" selection-end-line="1090" selection-end-column="65" />
               <folding>
-                <marker date="1513776230830" expanded="true" signature="55340:55424" ph="{&quot;id&quot;: 'infoButtonId'...}" />
-                <marker date="1513776230830" expanded="true" signature="59626:59641" ph="..." />
-                <marker date="1513776230830" expanded="true" signature="59741:59756" ph="..." />
-                <marker date="1513776230830" expanded="true" signature="63713:63731" ph="..." />
+                <marker date="1516351754461" expanded="true" signature="55554:55638" ph="{&quot;id&quot;: 'infoButtonId'...}" />
+                <marker date="1516351754461" expanded="true" signature="59840:59855" ph="..." />
+                <marker date="1516351754461" expanded="true" signature="59955:59970" ph="..." />
+                <marker date="1516351754461" expanded="true" signature="63927:63945" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Measure.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/externals/gxp/src/script/plugins/Measure.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3618">
-              <caret line="207" column="42" lean-forward="false" selection-start-line="207" selection-start-column="42" selection-end-line="208" selection-end-column="31" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -4604,8 +4621,18 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worldmap/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="81" column="52" lean-forward="false" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="52" />
+            <state relative-caret-position="93">
+              <caret line="1026" column="28" lean-forward="false" selection-start-line="1026" selection-start-column="23" selection-end-line="1026" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wm_extra/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -4615,7 +4642,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>padding</find>
       <find>LANGUAGE_CODE</find>
       <find>footer</find>
       <find>body.pn</find>
@@ -4645,6 +4671,7 @@
       <find>addWorldMapLayers</find>
       <find>reloadWorldMapSource</find>
       <find>Hypermap:WorldMap</find>
+      <find>proxy</find>
     </findStrings>
     <replaceStrings>
       <replace>Baidu</replace>
@@ -4722,112 +4749,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
               <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="externals" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="externals" type="462c0819:PsiDirectoryNode" />
-              <item name="gxp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="externals" type="462c0819:PsiDirectoryNode" />
-              <item name="gxp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="externals" type="462c0819:PsiDirectoryNode" />
-              <item name="gxp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="geonode-client" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="GeoExplorer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
@@ -4850,19 +4777,14 @@
               <item name="worldmap" type="462c0819:PsiDirectoryNode" />
               <item name="worldmap" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="maps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="worldmap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="worldmap" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="worldmap_client" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4997,7 +4919,7 @@
   <component name="ToolWindowManager">
     <frame x="277" y="286" width="1377" height="912" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23927765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24303988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19870968" sideWeight="0.5170909" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -5007,7 +4929,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31870967" sideWeight="0.48290908" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31870967" sideWeight="0.48290908" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -5030,7 +4952,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="147" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wm_extra/views.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="148" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -5206,13 +5135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worldmap/static/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="69" column="44" lean-forward="false" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worldmap/templates/site_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -5224,13 +5146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wm_extra/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="598" column="0" lean-forward="true" selection-start-line="598" selection-start-column="0" selection-end-line="598" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -5349,10 +5264,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/worldmap/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2574">
-          <caret line="143" column="45" lean-forward="false" selection-start-line="143" selection-start-column="45" selection-end-line="143" selection-end-column="45" />
+        <state relative-caret-position="2664">
+          <caret line="148" column="45" lean-forward="false" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
           <folding>
-            <marker date="1513337618427" expanded="true" signature="4574:4740" ph="{% if user.is_authenticated ... %}" />
+            <marker date="1516351766437" expanded="true" signature="4574:4740" ph="{% if user.is_authenticated ... %}" />
           </folding>
         </state>
       </provider>
@@ -5367,38 +5282,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/worldmap/templates/worldmap_client/worldmap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
+        <state relative-caret-position="0">
           <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worldmap/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="81" column="52" lean-forward="false" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoNode/ogp/SearchTableSolr.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="423" column="54" lean-forward="false" selection-start-line="423" selection-start-column="54" selection-end-line="423" selection-end-column="54" />
+        <state relative-caret-position="7650">
+          <caret line="425" column="54" lean-forward="false" selection-start-line="425" selection-start-column="54" selection-end-line="425" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/geonode-client/app/static/script/app/GeoExplorer/GeoExplorer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="1097" column="37" lean-forward="false" selection-start-line="1097" selection-start-column="37" selection-end-line="1097" selection-end-column="37" />
+        <state relative-caret-position="121">
+          <caret line="1090" column="65" lean-forward="true" selection-start-line="1090" selection-start-column="65" selection-end-line="1090" selection-end-column="65" />
           <folding>
-            <marker date="1513776230830" expanded="true" signature="55340:55424" ph="{&quot;id&quot;: 'infoButtonId'...}" />
-            <marker date="1513776230830" expanded="true" signature="59626:59641" ph="..." />
-            <marker date="1513776230830" expanded="true" signature="59741:59756" ph="..." />
-            <marker date="1513776230830" expanded="true" signature="63713:63731" ph="..." />
+            <marker date="1516351754461" expanded="true" signature="55554:55638" ph="{&quot;id&quot;: 'infoButtonId'...}" />
+            <marker date="1516351754461" expanded="true" signature="59840:59855" ph="..." />
+            <marker date="1516351754461" expanded="true" signature="59955:59970" ph="..." />
+            <marker date="1516351754461" expanded="true" signature="63927:63945" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worldmap/static/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worldmap/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="1026" column="28" lean-forward="false" selection-start-line="1026" selection-start-column="23" selection-end-line="1026" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wm_extra/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

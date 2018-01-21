@@ -1081,6 +1081,8 @@ msgid "Structure"
 msgstr "建筑物"
 msgid "Climatology Meteorology Atmosphere"
 msgstr "气候气象"
+msgid "Humanity"
+msgstr "人文"
 
 #: worldmap/templates/base.html:155
 msgid "Don't have an account yet?"
