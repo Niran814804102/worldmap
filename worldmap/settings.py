@@ -79,7 +79,7 @@ DEBUG_STATIC = str2bool(os.getenv('DEBUG_STATIC', 'False'))
 
 # This is needed for integration tests, they require
 # geonode to be listening for GeoServer auth requests.
-os.environ['DJANGO_LIVE_TEST_SERVER_ADDRESS'] = '172.20.10.3:8000'
+os.environ['DJANGO_LIVE_TEST_SERVER_ADDRESS'] = 'amap.zju.edu.cn:8000'
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
 
@@ -129,7 +129,7 @@ DATABASES = {
 MANAGERS = ADMINS = os.getenv('ADMINS', [])
 
 USE_CUSTOM_ORG_AUTHORIZATION = True
-CUSTOM_ORG_AUTH_TEXT = 'Are you affiliated with Harvard University?'
+#CUSTOM_ORG_AUTH_TEXT = 'Are you affiliated with Harvard University?'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -737,7 +737,7 @@ _DEFAULT_CATALOGUE = {
         # 'ENGINE': 'geonode.catalogue.backends.generic',
 
         # The FULLY QUALIFIED base url to the CSW instance for this GeoNode
-        'URL': '%scatalogue/csw' % SITEURL,
+        'URL': '%s/catalogue/csw' % SITEURL,
         # 'URL': 'http://localhost:8080/geonetwork/srv/en/csw',
         # 'URL': 'http://localhost:8080/deegree-csw-demo-3.0.4/services',
 
@@ -807,7 +807,7 @@ DEFAULT_MAP_CRS = os.getenv('DEFAULT_MAP_CRS',"EPSG:900913")
 #GeoNode Client
 #GEONODE_CLIENT_LOCATION = os.getenv('GEONODE_CLIENT_LOCATION',
 #                                     '/static/worldmap_client/')
-GEONODE_CLIENT_LOCATION = os.getenv('GEONODE_CLIENT_LOCATION',"http://localhost:9090/")
+GEONODE_CLIENT_LOCATION = "http://amap.zju.edu.cn:9090/"
 
 
 # Where should newly created maps be focused?
