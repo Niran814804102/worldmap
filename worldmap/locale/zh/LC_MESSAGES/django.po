@@ -1017,12 +1017,12 @@ msgstr ""
 #: worldmap/templates/worldmap_client/worldmap.html:248
 msgid ""
 "Maps rectified using this tool can be brought into WorldMap by following the "
-"instructions under Section 4.5 in <a href='{{ STATIC_URL }}docs/"
-"WorldMap_Help.pdf'>WorldMap Help</a>."
+"instructions under Section 4.7 in <a href='%(STATIC_URL)sdocs/"
+"WorldMap_Help_en.pdf'>WorldMap Help</a>."
 msgstr ""
-"使用该工具进行校正的地图按照下列指示可以进入WorldMap"
-"在4.5章节 <a href='{{ STATIC_URL }}docs/"
-"WorldMap_Help.pdf'>WorldMap帮助文档</a>。"
+"使用该工具进行校正的地图可以导入WorldMap中，"
+"具体流程请查看 <a href='%(STATIC_URL)sdocs/"
+"WorldMap_Help_zh.pdf'>WorldMap帮助文档中的4.7章节</a>。"
 
 #: worldmap/templates/worldmap_client/worldmap.html:261
 #: worldmap/templates/worldmap_client/worldmap.html:277
