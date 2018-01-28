@@ -44,6 +44,14 @@ msgstr "是的"
 msgid "No"
 msgstr "不是"
 
+#: wm_extra/accounts/forms.py:61
+msgid "Are you affiliated with Zhejiang University?"
+msgstr "是否从属于浙江大学？"
+
+#: wm_extra/accounts/forms.py:64
+msgid "I agree to the <a href='/aboutus/#disclaimer'>Terms and Conditions</a>"
+msgstr "<a href='/aboutus/#disclaimer'>我已阅读并同意相关条款</a>"
+
 #: wm_extra/accounts/forms.py:67
 msgid "Usernames can only contain letters, numbers, dots and underscores."
 msgstr "用户名只能包含字母、数字、标点和下划线。"
@@ -244,6 +252,13 @@ msgstr "记住我"
 msgid "Type your search here ..."
 msgstr "在这输入关键词......"
 
+#: worldmap/templates/base.html:140
+msgid "<a href='/static/docs/WorldMap_Help_en.pdf'>Worldmap Help</a>"
+msgstr "<a href='/static/docs/WorldMap_Help_zh.pdf'>Worldmap帮助文档</a>"
+
+#: worldmap/templates/base.html:142
+msgid "GeoNode Help"
+msgstr "GeoNode简介"
 #: worldmap/templates/base/_resourcebase_snippet.html:44
 #: worldmap/templates/layers/layer_detail.html:453
 msgid "Create a Map"
@@ -511,6 +526,10 @@ msgstr ""
 msgid "No styles associated with this layer"
 msgstr "没有该图层相关的样式"
 
+#: worldmap/templates/layers/layer_detail.html:505
+msgid "(default style)"
+msgstr "(默认样式)"
+
 #: worldmap/templates/layers/layer_detail.html:512
 msgid "Click the button below to change the permissions of this layer."
 msgstr "点击下方按钮改变该图层的许可"
@@ -751,7 +770,7 @@ msgstr "新地图"
 
 #: worldmap/templates/people/profile_detail.html:12
 msgid "Profile of "
-msgstr "的简介"
+msgstr "简介-"
 
 #: worldmap/templates/people/profile_detail.html:77
 #: worldmap/templates/people/profile_detail.html:83
@@ -1085,8 +1104,8 @@ msgid "Structure"
 msgstr "建筑物"
 msgid "Climatology Meteorology Atmosphere"
 msgstr "气候气象"
-msgid "Humanity"
-msgstr "人文"
+msgid "Humanity History"
+msgstr "人文历史"
 
 #: worldmap/templates/base.html:155
 msgid "Don't have an account yet?"
@@ -1098,8 +1117,8 @@ msgstr "学术地图发布平台"
 #: worldmap/templates/base.html:133
 msgid "Zhejiang University"
 msgstr "浙江大学"
-msgid "Harvard University"
-msgstr "哈佛大学"
+msgid "CGA Harvard"
+msgstr "哈佛大学CGA"
 msgid "Copyright Notice"
 msgstr "版权声明"
 msgid "All rights reserved"
