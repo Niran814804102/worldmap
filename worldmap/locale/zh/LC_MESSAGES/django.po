@@ -877,8 +877,12 @@ msgid "WorldMap is being developed by the "
 msgstr "开发WorldMap的是"
 
 #: worldmap/templates/site_index.html:70
-msgid "Center for Geographic Analysis"
-msgstr "地理分析中心"
+msgid "Center for Geographic Analysis at Zhejiang University"
+msgstr "哈佛大学地理分析中心"
+
+#: worldmap/templates/site_index.html:70
+msgid "Bigdata and Chinese AMAP Innovation Team of Zhejiang University"
+msgstr "浙江大学大数据与中国学术地图创新团队"
 
 #: worldmap/templates/site_index.html:70
 msgid "at"

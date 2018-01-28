@@ -239,7 +239,8 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
     worldmapDataText: 'Search',
     externalDataText: 'External Data',
     leavePageWarningText: 'If you leave this page, unsaved changes will be lost.',
-
+    cgaharvardText: 'Center for Geographic Analysis',
+    bdandcampText: 'Bigdata and CAMAP Innovation Team',
     constructor: function(config) {
         this.config = config;
         this.popupCache = {};
@@ -1162,7 +1163,7 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
             layer_detail_url = 'http://worldmap.harvard.edu/data/' + thisRecord.get('name');
         };
         if (thisRecord.get('service_type') === 'Hypermap:WorldMap2'){
-            layer_detail_url = 'http://localhost:8000/data/' + thisRecord.get('name');
+            layer_detail_url = 'http://amap.zju.edu.cn:8000/data/' + thisRecord.get('name');
         };
 
         if(layer.local){
@@ -1409,7 +1410,11 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
      */
     createMapOverlay: function() {
         var cgaLink = new Ext.BoxComponent({
-            html:'<div class="cga-link" onclick="javascript:window.open(\'http://gis.harvard.edu\', \'_blank\');"><a href="http://gis.harvard.edu">Center for Geographic Analysis</a></div>'
+            html:'<div class="cga-link" onclick="javascript:window.open(\'http://gis.harvard.edu\', \'_blank\');"><a href="http://gis.harvard.edu">' + this.cgaharvardText + '</a></div>'
+        });
+
+        var bdamapLink = new Ext.BoxComponent({
+            html:'<div class="cga-link" onclick="javascript:window.open(\'http://www.zju.edu.cn\', \'_blank\');"><a href="http://www.zju.edu.cn">' + this.bdandcampText + '</a></div>'
         });
 
         var scaleLinePanel = new Ext.BoxComponent({
@@ -1496,6 +1501,7 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
             items: [
                 scaleLinePanel,
                 zoomSelectorWrapper,
+                bdamapLink,
                 cgaLink
             ]
         });
@@ -1664,8 +1670,6 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
                             {
                                 xtype: "gx_linkembedmapdialog",
                                 linkUrl: this.rest + (this.about["urlsuffix"] ? this.about["urlsuffix"] : this.mapID) + '/' + encodedSnapshotId,
-                                linkMessage: '<span style="font-size:10pt;">Paste link in email or IM:</span>',
-                                publishMessage: '<span style="font-size:10pt;">Paste HTML to embed in website:</span>',
                                 url: this.rest + (this.about["urlsuffix"] ? this.about["urlsuffix"] : this.mapID) + '/' + encodedSnapshotId + "/embed"
                             }
                         ]
@@ -1949,8 +1953,8 @@ var GeoExplorer = Ext.extend(gxp.Viewer, {
             closeAction: 'hide',
             items: this.infoTextPanel,
             modal: true,
-            width: 500,
-            height:400,
+            width: 512,
+            height:215,
             autoScroll: true
         });
     },
