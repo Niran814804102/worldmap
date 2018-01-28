@@ -74,8 +74,6 @@
             <li><a href="{% url "admin:index" %}">{% trans "Admin" %}</a></li>
             <li><a href="{{ GEOSERVER_BASE_URL }}">GeoServer</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="{% url "help" %}">{% trans "Help" %}</a></li>
-            <li role="separator" class="divider"></li>
             <li><a href="/account/logout/">{% trans "Log out" %}</a></li>
           </ul>
         </li>
@@ -128,31 +126,39 @@
       <img src="{{ STATIC_URL }}img/title_small.png"/>
       <hr/>
       <div class="row footerContent">
-        <div class="col-md-4 col-sm-4">
-          <h4 class="footerTitle">{%  trans "Contact Us" %}</h4>
+        <div class="col-md-3 col-sm-3">
+          <h4 class="footerTitle">{% trans "Contact Us" %}</h4>
           <span class="footerFont">
               <a href='http://www.zju.edu.cn'>{%  trans "Zhejiang University" %}</a>
               <br>
-              <a href='http://www.harvard.edu'>{%  trans "Harvard University" %}</a>
+              <a href='http://gis.harvard.edu/'>{%  trans "CGA Harvard" %}</a>
           </span>
         </div>
-        <div class="col-md-4 col-sm-4">
-          <h4 class="footerTitle">{%  trans "Copyright Notice" %}</h4>
+        <div class="col-md-3 col-sm-3">
+          <h4 class="footerTitle">{% trans "Need Help?" %}</h4>
+          <span>
+              {% trans "<a href='/static/docs/WorldMap_Help_en.pdf'>Worldmap Help</a>" %}
+              <br>
+              <a href="{% url "help" %}">{% trans "GeoNode Help" %}</a>
+          </span>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <h4 class="footerTitle">{% trans "Copyright Notice" %}</h4>
           <span>
               <a href="/aboutus/#copyright">{% trans "All rights reserved" %}</a>
               <br>
-              <a href="/aboutus/#disclaimer">{%  trans "Disclaimer" %}</a>
+              <a href="/aboutus/#disclaimer">{% trans "Disclaimer" %}</a>
           </span>
         </div>
-        <div class="col-md-4 col-sm-4">
-            <h4 class="footerTitle">{%  trans "Choose Language" %}</h4>
+        <div class="col-md-3 col-sm-3">
+            <h4 class="footerTitle">{% trans "Choose Language" %}</h4>
             <label class="hidden">{% trans "Language" %}</label>
             {% if csrf_token != "NOTPROVIDED" %}
             {% get_current_language as LANGUAGE %}
-            <div style="position: absolute;left: 30%">
+            <div style="position: absolute;left: 17%">
             <form class="form-inline" action="/i18n/setlang/" method="post">
             {% csrf_token %}
-              <select style="width: 100%" name="language" onchange="javascript:form.submit()">
+              <select class="selectpicker" data-style="btn-primary" style = "width:66%;"name="language" onchange="javascript:form.submit()">
                 {% for lang in LANGUAGES %}
                 <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
                   {{ lang.1 }}
