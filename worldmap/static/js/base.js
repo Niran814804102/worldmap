@@ -24,7 +24,7 @@ function showCategorys(language){
 		cache: false,
 		type: "POST",
         data: {
-            language : language
+            language: language
         },
 		success: function (res) {
 			data = $.parseJSON(res);
@@ -33,7 +33,7 @@ function showCategorys(language){
 		  xhr.setRequestHeader("X-CSRFToken", csrftoken);
 		}
 	});
-	var selectHTML = '';
+	var selectHTML = "";
 	for(category in data){
 		var categoryid = parseInt(category);
 		var categorydescription = data[category][0];
@@ -41,8 +41,8 @@ function showCategorys(language){
 	}
 	$("#category1").append(selectHTML);
 	$("#category2").append(selectHTML);
-    $('#category1').selectpicker('refresh');
-    $('#category2').selectpicker('refresh');
+    $("#category1").selectpicker('refresh');
+    $("#category2").selectpicker('refresh');
 }
 function showMaps(divIdPrefix, type, category){
 	var result = null;
