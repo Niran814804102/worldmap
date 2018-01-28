@@ -267,10 +267,10 @@ GeoExt.Lang.add("zh-cn", {
     },
 
     "gxp.StrokeSymbolizer.prototype": {
-        solidStrokeName: "solid",
-        dashStrokeName: "dash",
-        dotStrokeName: "dot",
-        titleText: "Stroke",
+        solidStrokeName: "实线",
+        dashStrokeName: "短线",
+        dotStrokeName: "点线",
+        titleText: "边界",
         styleText: "样式",
         colorText: "颜色",
         widthText: "宽度",
@@ -285,11 +285,34 @@ GeoExt.Lang.add("zh-cn", {
     },
 
     "gxp.TextSymbolizer.prototype": {
-        labelValuesText: "标签值",
-        haloText: "光晕",
-        sizeText: "大小"
-    },
-
+        labelValuesText: "标签属性",
+        haloText: "光环",
+        sizeText: "大小",
+        priorityText: "优先",
+        labelOptionsText: "标签选项",
+        autoWrapText: "自动换行",
+        followLineText: "走线",
+        maxDisplacementText: "最大偏移",
+        repeatText: "重复",
+        forceLeftToRightText: "强制从左到右",
+        graphicResizeText: "图像大小",
+        graphicMarginText: "图形",
+        graphicTitle: "图形",
+        fontColorTitle:  "字体颜色和不透明度",
+        positioningText: "定位",
+        anchorPointText: "锚点",
+        displacementXText: "X向偏移",
+        displacementYText: "Y向偏移",
+        perpendicularOffsetText: "垂直偏移量",
+        priorityHelp: "指定字段的值越高，标签将越快被绘制(从而在解决冲突中获利)",
+        autoWrapHelp: "包装超过一定长度的标签",
+        followLineHelp: "标签是否应该遵循直线的几何形状?",
+        maxDisplacementHelp: "如果标签位置占线则采用像素的最大偏移",
+        repeatHelp: "在一定数量的像素之后重复标签",
+        forceLeftToRightHelp: "标签通常会被翻转，以使其更易读。如果这个字符恰好是一个方向箭头那么这是不可取的",
+        graphic_resizeHelp: "指定调整标签图形(如高速公路护栏)，以适应标签文本的模式。默认模式“none”从不修改标签图形。在拉伸模式下，GeoServer将调整图形以精确地包围标签文本，可能会修改图像的纵横比。在比例模式下，GeoServer将把图像扩展到足够大的位置，以使文本围绕文本，同时保持其原始的长宽比。",
+        graphic_marginHelp: "类似于保证金简写属性在HTML，CSS的解释取决于提供了多少边缘值：1 =使用保证金在长度的标签。2 =使用顶部和底部边缘的第一和第二个左和右的利润率。3 =使用第一个顶部边缘，第二个为左和右边缘，第三个为底部边缘。4 =使用第一个，第二个为右，第三个为底部边缘，第四个为左边缘。"
+     },
     "gxp.WMSLayerPanel.prototype": {
         aboutText: "关于",
         titleText: "标题",
@@ -321,6 +344,8 @@ GeoExt.Lang.add("zh-cn", {
          addStyleText: "添加",
          addStyleTip: "添加新的样式",
          chooseStyleText: "选择样式",
+         classifyStyleText:"分类",
+         classifyStyleTip:"基于属性进行分类",
          deleteStyleText: "移除",
          deleteStyleTip: "删除所选样式",
          editStyleText: "编辑",
@@ -342,6 +367,35 @@ GeoExt.Lang.add("zh-cn", {
          ruleWindowTitle: "样式规则：{0}",
          stylesFieldsetTitle: "样式",
          rulesFieldsetTitle: "规则"
+    },
+
+    "gxp.ClassificationPanel.prototype": {
+        classifyText: "分类",
+        rampBlueText: "蓝色",
+        rampRedText: "红色",
+        rampOrangeText: "橙色",
+        rampJetText: "蓝-红",
+        rampGrayText: "灰色",
+        rampRandomText: "随机",
+        rampCustomText: "自定义",
+        selectColorText: "选择颜色",
+        colorStartText: "起始颜色",
+        colorEndText: "终止颜色",
+        methodUniqueText: "唯一值",
+        methodQuantileText: "等量",
+        methodEqualText: "等距",
+        methodJenksText: "Jenks自然间断点",
+        standardDeviationText: "标准差",
+        attributeText: "属性",
+        selectAttributeText: "选择属性",
+        startColor: "#FEE5D9",
+        endColor: "#A50F15",
+        generateRulesText: "应用",
+        reverseColorsText: "反转颜色",
+        methodText: "方法",
+        classesText: "数量",
+        colorrampText: "颜色梯度",
+        selectMethodText: "选择方法"
     },
 
     "gxp.LayerUploadPanel.prototype": {
@@ -488,7 +542,8 @@ GeoExt.Lang.add("zh-cn", {
     },
 
     "gxp.LinkEmbedMapDialog.prototype": {
-        linkMessage: '在email或者IM拷贝链接'
+        linkMessage: '<span style="font-size:10pt;">拷贝以下链接到email或者IM：</span>',
+        publishMessage: '<span style="font-size:10pt;">拷贝以下HTML嵌入到前端：</span>'
     },
 
     "gxp.plugins.GeoNodeQueryTool.prototype" : {
@@ -508,16 +563,17 @@ GeoExt.Lang.add("zh-cn", {
         infoActionTip: '输入要搜索的地名',
         toolText: '地名索引',
         searchingText: '检索中...',
-        fromText: 'From: YYYY-MM-DD',
-        toText: 'To: YYYY-MM-DD',
+        fromText: '起始: YYYY-MM-DD',
+        toText: '终止: YYYY-MM-DD',
         datesText: '日期',
         geocodersText: '地理编码',
-        advancedText: '更新时间',
+        advancedText: '高级设置',
         sourceText: '源',
         startDateText: '开始日期',
         endDateText: '结束日期',
         placenameText: '地名',
-        coordinatesText: '坐标系'
+        coordinatesText: '坐标系',
+        searchText: '检索'
     },
 
     'gxp.FeedSourceDialog.prototype': {
@@ -525,14 +581,14 @@ GeoExt.Lang.add("zh-cn", {
         addFlickrText: 'Add Flickr Photos',
         addYouTubeText: 'YouTube Videos',
         addHGLText: 'Harvard Geospatial Library',
-        addRSSText: 'Other GeoRSS Feed',
+        addRSSText: '其他GeoRSS Feed',
         addFeedText: '添加到地图',
-        titleText: 'Feed Title',
+        titleText: 'Feed标题',
         keywordText: '关键字',
         typeText: '类型',
         urlText: 'URL',
-        maxResultsText: 'Maximum # Results',
-        chooseNumberText: 'Choose number...',
+        maxResultsText: '最大 # Results',
+        chooseNumberText: '选择数量...',
         georssfeedsText: 'GeoRSS Feeds'
     },
 
