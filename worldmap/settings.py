@@ -577,14 +577,26 @@ ACTSTREAM_SETTINGS = os.getenv('ACTSTREAM_SETTINGS',_DEFAULT_ACTSTREAM_SETTINGS)
 EMAIL_ENABLE = True
 
 if EMAIL_ENABLE:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = '172.20.10.3'
-    EMAIL_PORT = 25
-    EMAIL_HOST_USER = ''
-    EMAIL_HOST_PASSWORD = ''
-    EMAIL_USE_TLS = False
-    DEFAULT_FROM_EMAIL = 'GeoNode <no-reply@geonode.org>'
-
+#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#     EMAIL_HOST = 'amap.zju.edu.cn'
+#     EMAIL_PORT = 25
+#     EMAIL_HOST_USER = ''
+#     EMAIL_HOST_PASSWORD = ''
+#     EMAIL_USE_TLS = False
+    DEFAULT_FROM_EMAIL = '814804102@qq.com'
+    EMAIL_USE_TLS = True
+    EMAIL_HOST = 'smtp.qq.com'
+    EMAIL_HOST_USER = '814804102@qq.com'
+    EMAIL_HOST_PASSWORD = 'ekmzbtktvchlbdjc'
+    EMAIL_PORT = 587
+# if EMAIL_ENABLE:
+#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#     EMAIL_HOST = 'smtp.exmail.qq.com'
+#     EMAIL_PORT = 465#587
+#     EMAIL_HOST_USER = '2268682770@qq.com'
+#     EMAIL_HOST_PASSWORD = 'wanglijun1996071'
+#     EMAIL_USE_TLS = False
+#     DEFAULT_FROM_EMAIL = 'GeoNode <no-reply@geonode.org>'
 # Settings for Social Apps
 REGISTRATION_OPEN =  str2bool(os.getenv('REGISTRATION_OPEN', 'False'))
 ACCOUNT_EMAIL_CONFIRMATION_EMAIL = str2bool(os.getenv('ACCOUNT_EMAIL_CONFIRMATION_EMAIL', 'False'))
