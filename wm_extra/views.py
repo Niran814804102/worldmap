@@ -552,6 +552,7 @@ def official_site(request, site):
     return map_view_wm(request, str(map_obj.id))
 
 
+
 # TODO get the category list
 def get_categorys(request):
     """
@@ -570,6 +571,7 @@ def get_categorys(request):
     # from django.utils import simplejson
     # return HttpResponse(simplejson.dumps(category, ensure_ascii=False))
     return HttpResponse(categoryjson)
+
 
 # TODO get the major maps created by admin, or get the hotest and latest layer/map
 def get_most_maps(request):
@@ -592,7 +594,7 @@ def get_most_maps(request):
         categoryid = int(request.POST['category'])
         resourcebase_queryset = ResourceBase.objects.instance_of(Map).filter(category_id=categoryid).order_by(key)[0:5]
     else:
-        resourcebase_queryset = ResourceBase.objects.instance_of(Map).all().order_by(key)[0:5]
+        resourcebase_queryset = ResourceBase.objects.instance_of(Map).all().order_by(key,'-date')[0:5]
     count = 0
     for resourcebase in resourcebase_queryset:
         resourcebase_dict[count] = [resourcebase.title, resourcebase.thumbnail_url, resourcebase.detail_url]

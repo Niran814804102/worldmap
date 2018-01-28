@@ -75,7 +75,22 @@ function showMaps(divIdPrefix, type, category){
 			img = $("#"+curdiv).find("img");
 			$("#"+curdiv).attr("onclick","location='"+mapurl+"'");
 			$("#"+curdiv).children("p").text(mapname);
-			img.attr("src",imgurl);
+			
+            if(type=="admin"){
+                if (mapname=="李白行迹图") {
+                    imgurl =window.location.href+"uploaded/admingif/libai.gif"
+                }else if (mapname=="杜甫行迹图") {
+                    imgurl =window.location.href+"uploaded/admingif/dufu.gif"
+                }else if (mapname=="汤显祖行迹图") {
+                    imgurl =window.location.href+"uploaded/admingif/tangxianzu.gif"                  
+                }else if (mapname=="全宋文专题") {
+                    imgurl =window.location.href+"uploaded/admingif/quansongwen.gif"                 
+                }else if (mapname=="清代妇女作家专题图") {
+                    imgurl =window.location.href+"uploaded/admingif/qingdaifunv.gif"                   
+                }
+            }
+
+            img.attr("src",imgurl);
 		}
 		else
 		{
