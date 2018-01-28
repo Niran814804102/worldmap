@@ -116,10 +116,12 @@
 footer {
   text-align: center;
   background-color: #f5f5f5;
+  font-family: Helvetica, Microsoft YaHei, Tohoma, Arial;
 }
 
 footer a {
   color: #2c689c;
+  font-size: 17px;
 }
 
 footer a:hover {

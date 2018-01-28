@@ -1,9 +1,9 @@
 window.onload=function(){
-	 setImgHeight();//set the height according to the width, the rate is 7:16[noData.jpg]
+	 setImgHeight();//set the height according to the width, the rate is 4:3[noData.jpg]
 }
 //be activated when browser's size is changed
 window.onresize=function(){
-	 setImgHeight();//set the height according to the width, the rate is 7:16[noData.jpg]
+	 setImgHeight();//set the height according to the width, the rate is 4:3[noData.jpg]
 }
 //set the selectchange event of category selectpicker
 function selectOnChange1(obj){
@@ -126,9 +126,16 @@ function setImgHeight() {
 	imgs.each(function (i) {
 		var img = $(this);
 		var width = img.width();
-		var height = width* 0.5625;
+		var height = width* 0.75;
 		img.height(height);
 	});
+    var imgs = $(".item");
+    imgs.each(function (i) {
+        var img = $(this);
+        var width = img.width();
+        var height = width* 0.75;
+        img.height(height);
+    });
 }
     // <script type="text/javascript" src="{{ GEONODE_CLIENT_LOCATION }}externals/ext/adapter/ext/ext-base.js"></script>
     // <script type="text/javascript" src="{{ GEONODE_CLIENT_LOCATION }}externals/ext/ext-all.js"></script>
