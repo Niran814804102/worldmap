@@ -54,7 +54,7 @@ gxp.plugins.GazetteerTool = Ext.extend(gxp.plugins.Tool, {
     /** api: config[services]
      *  ``String`` Default gazetteer services to search
      */
-    services: 'worldmap,google',
+    services: 'nominatim',
 
     /** api: config[searchingText]
      *  ``String`` Text to show when search is taking place
@@ -120,9 +120,9 @@ gxp.plugins.GazetteerTool = Ext.extend(gxp.plugins.Tool, {
         };
 
         // Gazetteer/Geocoder service options
-        var geocoderWorldMap = {text: 'WorldMap', id: 'worldmap', checked: true, disabled: false, hideOnClick: false, checkHandler: serviceCheck};
-        var geocoderGoogle = {text: 'Google', id: 'google', checked: true, hideOnClick: false, checkHandler: serviceCheck};
-        var geocoderNominatim = {text: 'Nominatim', id: 'nominatim', checked: false, hideOnClick: false, checkHandler: serviceCheck};
+        var geocoderWorldMap = {text: 'WorldMap', id: 'worldmap', checked: false, hideOnClick: false, checkHandler: serviceCheck};
+        //var geocoderGoogle = {text: 'Google', id: 'google', checked: true, hideOnClick: false, checkHandler: serviceCheck};
+        var geocoderNominatim = {text: 'Nominatim', id: 'nominatim', checked: true, disabled: false, hideOnClick: false, checkHandler: serviceCheck};
         var geocoderGeonames = {text: 'GeoNames', id: 'geonames', checked: false, hideOnClick: false, checkHandler: serviceCheck};
 
         //Optional start date filter
